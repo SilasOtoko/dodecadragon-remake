@@ -1,0 +1,1 @@
+{ "ignorePatterns": ["reference/**", "src/vendor/**", "dist/**"] }

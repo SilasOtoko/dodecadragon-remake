@@ -1,0 +1,2459 @@
+[
+ {
+  "key": "unlockedAchievements",
+  "t": "array",
+  "v": [
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   }
+  ],
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "unlocks",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "lastMajorChangeVersion",
+  "t": "number",
+  "v": 3,
+  "note": "tracks what version was last played so adjustments can be made in the loading code when necessary.",
+  "section": ""
+ },
+ {
+  "key": "lastUpdate",
+  "t": "number",
+  "v": 1793900149559,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "lastSave",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "lastSigilReset",
+  "t": "number",
+  "v": 1793900149559,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "timePlayed",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "backgroundPatternOn",
+  "t": "boolean",
+  "v": true,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "confirmations",
+  "t": "array",
+  "v": [
+   {
+    "t": "boolean",
+    "v": true
+   },
+   {
+    "t": "boolean",
+    "v": true
+   },
+   {
+    "t": "boolean",
+    "v": true
+   }
+  ],
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "achievementFlashActive",
+  "t": "boolean",
+  "v": false,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "currentTab",
+  "t": "number",
+  "v": 1,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "dragonName",
+  "t": "string",
+  "v": "Unnamed dragon",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "sigilResetterActive",
+  "t": "boolean",
+  "v": false,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "sigilResetterType",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "sigilResetterMode",
+  "t": "number",
+  "v": 0,
+  "note": "0 is sigil amount, 1 is gold, 2 is time since reset",
+  "section": ""
+ },
+ {
+  "key": "sigilResetterAmount",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "sigilResetterGold",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "sigilResetterTime",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "sigilResetterCycle",
+  "t": "boolean",
+  "v": false,
+  "note": "specifies whether the resetter should cycle to next colour on each reset",
+  "section": ""
+ },
+ {
+  "key": "sigilResetterCycleMode",
+  "t": "number",
+  "v": 0,
+  "note": "0 is all unlocked colours, 1 is R-O-Y only",
+  "section": ""
+ },
+ {
+  "key": "gold",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "goldPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "miners",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "minerCost",
+  "t": "Decimal",
+  "v": "20",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "fire",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "firePerSecond",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": ""
+ },
+ {
+  "key": "fireGoldMultiplier",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireAutoMaxAll",
+  "t": "boolean",
+  "v": true,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade1Bought",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade1Cost",
+  "t": "Decimal",
+  "v": "50",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade2Bought",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade2Cost",
+  "t": "Decimal",
+  "v": "100",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade3Bought",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade3Cost",
+  "t": "Decimal",
+  "v": "100",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade4Bought",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade4Cost",
+  "t": "Decimal",
+  "v": "500",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade5Bought",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade5Cost",
+  "t": "Decimal",
+  "v": "500",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade6Bought",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "fireUpgrade6Cost",
+  "t": "Decimal",
+  "v": "20000000",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "dragonStage",
+  "t": "number",
+  "v": 1,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "platinumConvertCooldown",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "platinumToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "bestPlatinumToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "platinum",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "platinumUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   }
+  ],
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magic",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magicToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magicEffect",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "goldPerClick",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "minerAutoBuyMax",
+  "t": "boolean",
+  "v": true,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magicUpgradesBought",
+  "t": "array",
+  "v": [],
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "darkMagicUpgradesBought",
+  "t": "array",
+  "v": [],
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "voidMagicUpgradesBought",
+  "t": "array",
+  "v": [],
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "selectedChallenges",
+  "t": "array",
+  "v": [
+   {
+    "t": "boolean",
+    "v": false
+   },
+   {
+    "t": "boolean",
+    "v": false
+   },
+   {
+    "t": "boolean",
+    "v": false
+   },
+   {
+    "t": "boolean",
+    "v": false
+   }
+  ],
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "challengesActive",
+  "t": "boolean",
+  "v": false,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "noOfSelectedChallenges",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magicScoreToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magicScore1",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magicScore2",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magicScore3",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magicScore4",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "magifolds",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "uraniumConvertCooldown",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "uraniumToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "bestUraniumToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "uranium",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "uraniumUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   }
+  ],
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "dragonTimeSpent",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "dragonTimeCooldown",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "dragonFood",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "dragonFeedCost",
+  "t": "Decimal",
+  "v": "100000000",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "dragonTimeEffect",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "dragonPets",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": "I still need to condense these into an array *cries*"
+ },
+ {
+  "key": "cyanSigils",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cyanSigilsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cyanSigilPower",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cyanSigilPowerPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cyanSigilUpgrade1Cost",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cyanSigilUpgrade2Cost",
+  "t": "Decimal",
+  "v": "20",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cyanSigilUpgrade3Cost",
+  "t": "Decimal",
+  "v": "500",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cyanSigilUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueSigils",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueSigilsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueSigilPower",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueSigilPowerPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueSigilUpgrade1Cost",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueSigilUpgrade2Cost",
+  "t": "Decimal",
+  "v": "20",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueSigilUpgrade3Cost",
+  "t": "Decimal",
+  "v": "100",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueSigilUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "indigoSigils",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "indigoSigilsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "indigoSigilPower",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "indigoSigilPowerPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "indigoSigilUpgrade1Cost",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "indigoSigilUpgrade2Cost",
+  "t": "Decimal",
+  "v": "20",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "indigoSigilUpgrade3Cost",
+  "t": "Decimal",
+  "v": "400",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "indigoSigilUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "violetSigils",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "violetSigilsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "violetSigilPower",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "violetSigilPowerPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "violetSigilUpgrade1Cost",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "violetSigilUpgrade2Cost",
+  "t": "Decimal",
+  "v": "5",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "violetSigilUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "pinkSigils",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "pinkSigilsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "pinkSigilPower",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "pinkSigilPowerPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "pinkSigilUpgrade1Cost",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "pinkSigilUpgrade3Cost",
+  "t": "Decimal",
+  "v": "150000",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "pinkSigilUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledge",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "highestKnowledge",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTradeLevel",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTradeLevelCap",
+  "t": "Decimal",
+  "v": "3",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade1SigilTypes",
+  "t": "array",
+  "v": [
+   {
+    "t": "number",
+    "v": 1
+   },
+   {
+    "t": "number",
+    "v": 2
+   },
+   {
+    "t": "number",
+    "v": 3
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade1Amounts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade1Multipliers",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade1Reward",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade2SigilTypes",
+  "t": "array",
+  "v": [
+   {
+    "t": "number",
+    "v": 1
+   },
+   {
+    "t": "number",
+    "v": 2
+   },
+   {
+    "t": "number",
+    "v": 3
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade2Amounts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade2Multipliers",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade2Reward",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade3SigilTypes",
+  "t": "array",
+  "v": [
+   {
+    "t": "number",
+    "v": 1
+   },
+   {
+    "t": "number",
+    "v": 2
+   },
+   {
+    "t": "number",
+    "v": 3
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade3Amounts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade3Multipliers",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeTrade3Reward",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeUpgradeCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "20"
+   },
+   {
+    "t": "Decimal",
+    "v": "50"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "knowledgeAutoMaxAll",
+  "t": "boolean",
+  "v": true,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "tomes",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "totalTomes",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "tomeCost",
+  "t": "Decimal",
+  "v": "100000",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "tomeUpgradesBought",
+  "t": "array",
+  "v": [],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueFire",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueFirePerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueFireUpgradeCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "500"
+   },
+   {
+    "t": "Decimal",
+    "v": "1000"
+   },
+   {
+    "t": "Decimal",
+    "v": "50000"
+   },
+   {
+    "t": "Decimal",
+    "v": "50000000"
+   },
+   {
+    "t": "Decimal",
+    "v": "150000000"
+   },
+   {
+    "t": "Decimal",
+    "v": "100000000000"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueFireUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blueFireAutoMaxAll",
+  "t": "boolean",
+  "v": true,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "blood",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "bloodPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "currentHellLayer",
+  "t": "number",
+  "v": 1,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "inHell",
+  "t": "boolean",
+  "v": false,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "plutoniumConvertCooldown",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "plutoniumToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "bestPlutoniumToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "plutonium",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "plutoniumUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "redSigils",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "redSigilsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "redSigilPower",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "redSigilPowerPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "redSigilUpgrade1Cost",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "redSigilUpgrade2Cost",
+  "t": "Decimal",
+  "v": "1500",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "redSigilUpgrade3Cost",
+  "t": "Decimal",
+  "v": "50000",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "redSigilUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "orangeSigils",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "orangeSigilsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "orangeSigilPower",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "orangeSigilPowerPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "orangeSigilUpgrade1Cost",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "orangeSigilUpgrade2Cost",
+  "t": "Decimal",
+  "v": "2500",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "orangeSigilUpgrade3Cost",
+  "t": "Decimal",
+  "v": "250000",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "orangeSigilUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "yellowSigils",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "yellowSigilsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "yellowSigilPower",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "yellowSigilPowerPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "yellowSigilUpgrade1Cost",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "yellowSigilUpgrade2Cost",
+  "t": "Decimal",
+  "v": "4000",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "yellowSigilUpgrade3Cost",
+  "t": "Decimal",
+  "v": "2000000",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "yellowSigilUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyTetrahedrons",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyTetrahedronsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyTetrahedronUpgradesUnlocked",
+  "t": "array",
+  "v": [
+   {
+    "t": "boolean",
+    "v": true
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyTetrahedronUpgradesBought",
+  "t": "array",
+  "v": [],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyOctahedrons",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyOctahedronsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyOctahedronUpgradesUnlocked",
+  "t": "array",
+  "v": [
+   {
+    "t": "boolean",
+    "v": true
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyOctahedronUpgradesBought",
+  "t": "array",
+  "v": [],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyFire",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyFirePerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyFireUpgradeCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "500"
+   },
+   {
+    "t": "Decimal",
+    "v": "1000"
+   },
+   {
+    "t": "Decimal",
+    "v": "10000"
+   },
+   {
+    "t": "Decimal",
+    "v": "50000"
+   },
+   {
+    "t": "Decimal",
+    "v": "10000000"
+   },
+   {
+    "t": "Decimal",
+    "v": "1"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyFireUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyFireAutoMaxAll",
+  "t": "boolean",
+  "v": true,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyDodecahedrons",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyDodecahedronsToGet",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyDodecahedronUpgradesUnlocked",
+  "t": "array",
+  "v": [
+   {
+    "t": "boolean",
+    "v": true
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "holyDodecahedronUpgradesBought",
+  "t": "array",
+  "v": [],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "planets",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "planetEffect",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "planetCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "1e30"
+   },
+   {
+    "t": "Decimal",
+    "v": "1000000000000000"
+   },
+   {
+    "t": "Decimal",
+    "v": "100000"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "planetsFormed",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "superclusters",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "superclusterCost",
+  "t": "Decimal",
+  "v": "25",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "hypergodsDefeated",
+  "t": "number",
+  "v": 0,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cosmicPlague",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "cosmicPlaguePerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "spores",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "sporeCost",
+  "t": "Decimal",
+  "v": "ee7500",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "plagueUpgradeCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "25"
+   },
+   {
+    "t": "Decimal",
+    "v": "100"
+   },
+   {
+    "t": "Decimal",
+    "v": "100000"
+   },
+   {
+    "t": "Decimal",
+    "v": "1000000"
+   },
+   {
+    "t": "Decimal",
+    "v": "10000000000000"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "plagueUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "plagueAutoMaxAll",
+  "t": "boolean",
+  "v": true,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "oganesson",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "oganessonPerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "oganessonUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   },
+   {
+    "t": "number",
+    "v": 0
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "lightEssence",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "lightEssencePerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "lightEssenceUpgradeCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "100"
+   },
+   {
+    "t": "Decimal",
+    "v": "600"
+   },
+   {
+    "t": "Decimal",
+    "v": "3000"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "lightEssenceUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "darkEssence",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "darkEssencePerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "darkEssenceUpgradeCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "100"
+   },
+   {
+    "t": "Decimal",
+    "v": "1000"
+   },
+   {
+    "t": "Decimal",
+    "v": "10000"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "darkEssenceUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "deathEssence",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "deathEssencePerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "deathEssenceUpgradeCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "1000"
+   },
+   {
+    "t": "Decimal",
+    "v": "10000"
+   },
+   {
+    "t": "Decimal",
+    "v": "200000"
+   },
+   {
+    "t": "Decimal",
+    "v": "10000000"
+   },
+   {
+    "t": "Decimal",
+    "v": "1e40"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "deathEssenceUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityEssence",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityEssencePerSecond",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityEssenceUpgradeCosts",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "1000"
+   },
+   {
+    "t": "Decimal",
+    "v": "4000"
+   },
+   {
+    "t": "Decimal",
+    "v": "1000000000000000"
+   },
+   {
+    "t": "Decimal",
+    "v": "1e20"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityEssenceUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   },
+   {
+    "t": "Decimal",
+    "v": "0"
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "nuclearPasta",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "nuclearPastaCost",
+  "t": "Decimal",
+  "v": "ee3500000",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "nuclearPastaState",
+  "t": "number",
+  "v": 1,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "nuclearPastaStateInfo",
+  "t": "boolean",
+  "v": true,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "nuclearPastaCooldown",
+  "t": "number",
+  "v": 30,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "nuclearPastaExtended",
+  "t": "boolean",
+  "v": false,
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "nuclearPastaUpgradesBought",
+  "t": "array",
+  "v": [
+   {
+    "t": "boolean",
+    "v": false
+   },
+   {
+    "t": "boolean",
+    "v": false
+   },
+   {
+    "t": "boolean",
+    "v": false
+   },
+   {
+    "t": "boolean",
+    "v": false
+   }
+  ],
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityCubes",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityCubeCost",
+  "t": "Decimal",
+  "v": "ee7500000000.000001",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityCubeEffect",
+  "t": "Decimal",
+  "v": "1",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityBoosts",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityBoostCost",
+  "t": "Decimal",
+  "v": "ee24999999999.999992",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityBoostBoosts",
+  "t": "Decimal",
+  "v": "0",
+  "note": "",
+  "section": "Sigil stuff"
+ },
+ {
+  "key": "finalityBoostBoostCost",
+  "t": "Decimal",
+  "v": "ee150000000000.00003",
+  "note": "",
+  "section": "Sigil stuff"
+ }
+]
