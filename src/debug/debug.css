@@ -1,0 +1,34 @@
+/* Debug page styles: plain and readable, deliberately not the remake's design. */
+:root { color-scheme: light dark; --bg: #f6f3ec; --fg: #222; --muted: #666; --line: #d8d2c4; --panel: #fff; --accent: #408000; --warn: #a03020; }
+@media (prefers-color-scheme: dark) { :root { --bg: #17150f; --fg: #e8e2d4; --muted: #a39b8a; --line: #3a352a; --panel: #211e17; --accent: #8cc44f; --warn: #f08a70; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.4 system-ui, sans-serif; }
+.dbg { max-width: 1200px; margin: 0 auto; padding: 16px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); display: grid; gap: 16px; }
+.dbg-head h1 { margin: 0; font-size: 20px; }
+.dbg-head h1 span { font: 600 11px/1 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .1em; background: var(--accent); color: var(--bg); padding: 3px 6px; border-radius: 3px; vertical-align: middle; }
+.dbg-head p, .dbg-small { margin: 4px 0 0; color: var(--muted); }
+.dbg-error { margin: 0; padding: 8px 12px; border: 1px solid var(--warn); color: var(--warn); border-radius: 4px; }
+.dbg-note { margin: 0; color: var(--accent); }
+.dbg-resources { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 16px; background: var(--bg); padding: 8px 0; border-bottom: 1px solid var(--line); }
+/* Pinned only where there's room; late in the game the list fills half a phone screen. */
+@media (min-width: 900px) { .dbg-resources { position: sticky; top: 0; z-index: 1; } }
+.dbg-resources div { min-width: 0; }
+.dbg-resources dt { color: var(--muted); font-size: 12px; }
+.dbg-resources dd { margin: 0; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.dbg-resources small { color: var(--accent); }
+.dbg-panels { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; align-items: start; }
+.dbg-panel, .dbg-tools { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px; min-width: 0; }
+.dbg-panel h2, .dbg-tools h2 { margin: 0 0 8px; font-size: 15px; }
+.dbg-panel h2 span { color: var(--muted); font: 11px ui-monospace, monospace; }
+.dbg-buttons { display: flex; flex-wrap: wrap; gap: 6px; }
+.dbg-buttons button, .dbg-row button { font: inherit; font-size: 13px; text-align: left; min-height: 44px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); cursor: pointer; }
+.dbg-buttons button:hover, .dbg-row button:hover { border-color: var(--accent); }
+.dbg-buttons button:focus-visible, .dbg-row button:focus-visible, textarea:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.dbg-buttons button.later { opacity: .55; border-style: dashed; }
+.dbg-buttons b { font-weight: 600; font-variant-numeric: tabular-nums; }
+.dbg-tools { display: grid; gap: 8px; }
+.dbg-tools textarea, .dbg-tools input { font: 12px ui-monospace, monospace; width: 100%; box-sizing: border-box; padding: 6px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); }
+.dbg-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.dbg-state { margin: 0; display: grid; gap: 2px; font: 12px ui-monospace, monospace; }
+.dbg-state div { display: grid; grid-template-columns: minmax(0, 16em) minmax(0, 1fr); gap: 12px; padding: 2px 0; border-bottom: 1px dotted var(--line); }
+.dbg-state dt { color: var(--muted); overflow-wrap: anywhere; }
+.dbg-state dd { margin: 0; overflow-wrap: anywhere; }

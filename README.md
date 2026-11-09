@@ -11,18 +11,31 @@ A mobile-friendly remake of [DodecaDragons](https://demonin.com/games/dodecaDrag
 - [docs/timing-and-quirks.md](docs/timing-and-quirks.md): the tick loops, cooldowns, randomness and other behaviour to preserve
 - [reference/saves/](reference/saves/README.md): 38 test saves, from Alchemy to the ending
 
-**Next, Phase 1:** port the game logic into `src/engine/` with no UI, proving each system against the original.
+**Phase 1 (engine) working:** the whole game runs in `src/engine/` with no page, and matches the original exactly in side-by-side tests from a new game and all 38 saves. See [docs/engine.md](docs/engine.md) for how it's built and tested, and what's not covered yet.
+
+**See it running:** `npm run dev`, then open the address it prints. Until the real interface exists, the app is an engine debug page: live resources, the original's buttons grouped by the original's panels (shown as you unlock them), save import/export and a state inspector. Save codes move between it and the original game in both directions. Numbers the original's page code calculated just for display (like "Currently x…") show as "…" until the real interface; the State box has every saved value.
+
+**Next, Phase 2:** design the parchment, phone-first interface.
 
 ## Layout
 
 ```
-src/engine/    game logic, no DOM (state.ts is generated; save.ts is ported)
-src/vendor/    the original's break_eternity.js build (don't replace it with npm's)
-src/           React UI (a placeholder until Phase 3)
-public/        art and fonts from the original
-reference/     unmodified copy of the original game, plus test saves
-tools/         scripts that extract data from the original
-docs/          what Phase 0 found
+src/engine/            the game engine (no page)
+  engine.ts            start-up, loops, actions, form fields (hand-written)
+  achievements.ts      achievement checks (hand-written)
+  generated/           the original's game logic, translated by tools/port-engine.cjs
+  state.ts, constants.ts, format.ts, save.ts
+src/content/text.ts    names and descriptions from the original
+src/parity/            the original-vs-port test harness
+src/debug/             the engine debug page (temporary app)
+src/vendor/            the original's break_eternity.js build (don't replace it with npm's)
+src/main.tsx           app entry (shows the debug page until Phase 3)
+public/                art and fonts from the original
+reference/original/    unmodified copy of the original game
+reference/stripped/    the original minus page updates (generated, for reading)
+reference/saves/       test saves
+tools/                 scripts that extract and translate the original
+docs/                  findings and design notes
 ```
 
 ## Commands
@@ -30,9 +43,11 @@ docs/          what Phase 0 found
 ```sh
 npm install
 npm run dev        # local dev server
-npm test           # parity tests against the original code
+npm test           # everything, including the full parity runs (slow: tens of minutes)
+npm run test:quick # engine unit tests only (seconds)
 npm run build      # typecheck and production build
 npm run gen:state  # regenerate src/engine/state.ts and docs/save-fields.md from the original
+npm run gen:engine # regenerate constants, reference/stripped and src/engine/generated
 ```
 
 ## Credits

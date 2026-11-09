@@ -1,0 +1,3559 @@
+[
+ {
+  "index": 0,
+  "title": "DodecaDragons",
+  "buttons": [
+   {
+    "call": "produceGold()",
+    "label": [
+     {
+      "text": "Mine gold"
+     }
+    ]
+   },
+   {
+    "call": "buyMiner()",
+    "label": [
+     {
+      "text": "Hire a gold miner\nCosts "
+     },
+     {
+      "field": "minerCost",
+      "fallback": "20"
+     },
+     {
+      "text": " gold"
+     }
+    ]
+   },
+   {
+    "call": "buyMaxMiners()",
+    "label": [
+     {
+      "text": "Buy\nmax"
+     }
+    ]
+   },
+   {
+    "call": "minerAutoBuyMax()",
+    "label": [
+     {
+      "text": "Auto buy max: On"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockDragon()",
+    "label": [
+     {
+      "text": "Get a young dragon\nCosts 200 gold"
+     }
+    ]
+   },
+   {
+    "call": "unlockAlchemy()",
+    "label": [
+     {
+      "text": "Unlock Alchemy\nCosts 20,000,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockMagic()",
+    "label": [
+     {
+      "text": "Unlock Magic\nCosts 1.00e15 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockMoreMagicUpgrades()",
+    "label": [
+     {
+      "text": "Unlock more magic upgrades\nCosts 200,000,000 magic,\nRequires 150,000 magifolds"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "morePUupgrades()",
+    "label": [
+     {
+      "text": "Gain more platinum and uranium upgrades\nCosts 1.00e420 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockDarkMagicUpgrades()",
+    "label": [
+     {
+      "text": "Unlock Dark Magic Upgrades\nYou are gaining stronger control over your magic powers.\nCosts 1.00e1,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockBlood()",
+    "label": [
+     {
+      "text": "UNLOCK BLOOD\nCosts e5.00e14 gold"
+     }
+    ]
+   },
+   {
+    "call": "moreDarkMagicUpgrades()",
+    "label": [
+     {
+      "text": "Unlock more dark magic upgrades\nCosts e6.66e16 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockVoidMagicUpgrades()",
+    "label": [
+     {
+      "text": "Unlock Void Magic Upgrades\nYou are mastering control of your magic powers.\nCosts e1.00e100 gold and 100,000,000 holy fire"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockPlanets()",
+    "label": [
+     {
+      "text": "Unlock Planets\nCosts e1.00e400 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockEssences()",
+    "label": [
+     {
+      "text": "Unlock the Light and Dark Essences\nCosts ee500,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockDeathEssence()",
+    "label": [
+     {
+      "text": "Unlock Death Essence\nCosts ee1,500,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockNuclearPasta()",
+    "label": [
+     {
+      "text": "Unlock Nuclear Pasta\nCosts ee3,500,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockFinalityEssence()",
+    "label": [
+     {
+      "text": "Unlock Finality Essence\nCosts ee150,000,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "unlockFinalityCubes()",
+    "label": [
+     {
+      "text": "Unlock Finality Cubes\nCosts ee7.50e9 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "bigFinishCheck()",
+    "label": [
+     {
+      "text": "Become the omniverse.\nCosts ee1.00e12 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   }
+  ]
+ },
+ {
+  "index": 1,
+  "title": "Settings",
+  "buttons": [
+   {
+    "call": "toggleConfirmations(1)",
+    "label": [],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "toggleConfirmations(2)",
+    "label": [],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "toggleConfirmations(3)",
+    "label": [],
+    "hiddenAtStart": true
+   }
+  ]
+ },
+ {
+  "index": 2,
+  "title": "Resources",
+  "buttons": []
+ },
+ {
+  "index": 3,
+  "title": "Dragon",
+  "buttons": [
+   {
+    "call": "buyFireUpgrades()",
+    "label": [
+     {
+      "text": "Unlock fire upgrades\nCosts 5,000 gold"
+     }
+    ]
+   },
+   {
+    "call": "upgradeDragon(1)",
+    "label": [
+     {
+      "text": "Age your dragon into an adult\nMultiplies fire gain by 100\nCosts 2,500,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(2)",
+    "label": [
+     {
+      "text": "Age your dragon into an elder\nMultiplies fire gain by 100\nCosts 1.00e12 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(3)",
+    "label": [
+     {
+      "text": "Corrupt your dragon with the power of darkness\nMultiplies fire gain by 10,000\nCosts 1.00e25 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(4)",
+    "label": [
+     {
+      "text": "Infuse your dragon with the power of light\nMultiplies fire gain by 10,000,000\nCosts 1.00e150 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(5)",
+    "label": [
+     {
+      "text": "Enhance your dragon with incomprehensible machinery\nMultiplies blue fire gain by 100\nCosts e1.50e11 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(6)",
+    "label": [
+     {
+      "text": "Ascend your dragon with the power of the heavens themselves!\nMultiplies blue fire gain by 1.00e50\nCosts e1.00e55 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(7)",
+    "label": [
+     {
+      "text": "Fuse your dragon with versions of itself from other dimensions\nMultiplies holy fire gain by 1.00e10\nCosts e1.00e200 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(8)",
+    "label": [
+     {
+      "text": "Infuse your dragon with the cosmic plague and gain corrupted power\nMultiplies cosmic plague gain by 100\nCosts ee35,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(9)",
+    "label": [
+     {
+      "text": "Infuse your dragon with the essences of light, dark and death\nMultiplies light/dark essence gain by 1,000\nCosts ee1,750,000 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "upgradeDragon(10)",
+    "label": [
+     {
+      "text": "Infuse your dragon with the essence of finality\nMultiplies death and finality essence gain by 100\nCosts ee1.50e9 gold"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "dragonSpendTime()",
+    "label": [
+     {
+      "text": "Spend time with your dragon ("
+     },
+     {
+      "field": "dragonTimeCooldown",
+      "fallback": "0"
+     },
+     {
+      "text": ")\nYou are unable to enter challenges for the next 30 seconds"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "dragonFeed()",
+    "label": [
+     {
+      "text": "Feed your dragon\nTurns all your score and magifolds into dragon food\nNext feed requires "
+     },
+     {
+      "field": "dragonFeedCost",
+      "fallback": "100,000,000"
+     },
+     {
+      "text": " magifolds"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "dragonPet()",
+    "label": [
+     {
+      "text": "Pet your dragon!\nWhy does this cost, you ask? Stop asking so many questions!\nNext pet costs 250 … sigils"
+     }
+    ],
+    "hiddenAtStart": true
+   }
+  ]
+ },
+ {
+  "index": 4,
+  "title": "Fire upgrades",
+  "buttons": [
+   {
+    "call": "buyFireUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase fire production\nCurrently x…\nCosts "
+     },
+     {
+      "field": "fireUpgrade1Cost",
+      "fallback": "50"
+     },
+     {
+      "text": " fire"
+     }
+    ]
+   },
+   {
+    "call": "fireBuyMax(1)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyFireUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase fire effect\nCurrently x…\nCosts "
+     },
+     {
+      "field": "fireUpgrade2Cost",
+      "fallback": "100"
+     },
+     {
+      "text": " fire"
+     }
+    ]
+   },
+   {
+    "call": "fireBuyMax(2)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyFireUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase gold/click\nCurrently x…\nCosts "
+     },
+     {
+      "field": "fireUpgrade3Cost",
+      "fallback": "100"
+     },
+     {
+      "text": " fire"
+     }
+    ]
+   },
+   {
+    "call": "fireBuyMax(3)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyFireUpgrade(4)",
+    "label": [
+     {
+      "text": "Miners increase gold/second\nCurrently x…\nCosts "
+     },
+     {
+      "field": "fireUpgrade4Cost",
+      "fallback": "500"
+     },
+     {
+      "text": " fire"
+     }
+    ]
+   },
+   {
+    "call": "fireBuyMax(4)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyFireUpgrade(5)",
+    "label": [
+     {
+      "text": "Gold increases fire/second\nCurrently x…\nCosts "
+     },
+     {
+      "field": "fireUpgrade5Cost",
+      "fallback": "500"
+     },
+     {
+      "text": " fire"
+     }
+    ]
+   },
+   {
+    "call": "fireBuyMax(5)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyFireUpgrade(6)",
+    "label": [
+     {
+      "text": "Increase platinum gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "fireUpgrade6Cost",
+      "fallback": "20,000,000"
+     },
+     {
+      "text": " fire"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "fireBuyMax(6)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "fireAutoMaxAll()",
+    "label": [
+     {
+      "text": "Auto max all: On"
+     }
+    ]
+   },
+   {
+    "call": "fireMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 5,
+  "title": "Alchemy",
+  "buttons": [
+   {
+    "call": "platinumConvert()",
+    "label": [
+     {
+      "text": "Convert all gold into "
+     },
+     {
+      "field": "platinumToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " platinum ("
+     },
+     {
+      "field": "platinumConvertCooldown",
+      "fallback": "0"
+     },
+     {
+      "text": ")"
+     }
+    ]
+   },
+   {
+    "call": "buyPlatinumUpgrade(1)",
+    "label": [
+     {
+      "text": "Gain 20% more gold/second ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 0,
+      "fallback": "0"
+     },
+     {
+      "text": "/20)\nCosts 200 platinum"
+     }
+    ]
+   },
+   {
+    "call": "buyPlatinumUpgrade(2)",
+    "label": [
+     {
+      "text": "Gain 20% more fire/second ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 1,
+      "fallback": "0"
+     },
+     {
+      "text": "/20)\nCosts 500 platinum"
+     }
+    ]
+   },
+   {
+    "call": "buyPlatinumUpgrade(3)",
+    "label": [
+     {
+      "text": "Unlock a new fire upgrade ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 2,
+      "fallback": "0"
+     },
+     {
+      "text": "/1)\nCosts 750 platinum"
+     }
+    ]
+   },
+   {
+    "call": "buyPlatinumUpgrade(4)",
+    "label": [
+     {
+      "text": "Miner cost scales 5% slower ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 3,
+      "fallback": "0"
+     },
+     {
+      "text": "/5)\nCosts 1,500 platinum"
+     }
+    ]
+   },
+   {
+    "call": "buyPlatinumUpgrade(5)",
+    "label": [
+     {
+      "text": "Automatically gain platinum every second without\nresetting ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 4,
+      "fallback": "0"
+     },
+     {
+      "text": "/1)\nCosts 2,000 platinum"
+     }
+    ]
+   },
+   {
+    "call": "buyPlatinumUpgrade(6)",
+    "label": [
+     {
+      "text": "Platinum increases gold/second ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 5,
+      "fallback": "0"
+     },
+     {
+      "text": "/4)\nCurrently x…\nCosts 15,000 platinum"
+     }
+    ]
+   },
+   {
+    "call": "buyPlatinumUpgrade(7)",
+    "label": [
+     {
+      "text": "Increase magic effect ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 6,
+      "fallback": "0"
+     },
+     {
+      "text": "/…)\nCurrently x…\nCosts 1,000,000 platinum"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyPlatinumUpgrade(8)",
+    "label": [
+     {
+      "text": "Double uranium gain ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 7,
+      "fallback": "0"
+     },
+     {
+      "text": "/5)\nCosts 1.000e22 platinum"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyPlatinumUpgrade(9)",
+    "label": [
+     {
+      "text": "Fire upgrade 4 is boosted ("
+     },
+     {
+      "field": "platinumUpgradesBought",
+      "index": 8,
+      "fallback": "0"
+     },
+     {
+      "text": "/5)\nCosts 1.000e30 platinum"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "platinumMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 6,
+  "title": "Magic",
+  "buttons": [
+   {
+    "call": "magicCheck()",
+    "label": [
+     {
+      "text": "Reset all previous resources and upgrades\nYou will gain "
+     },
+     {
+      "field": "magicToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " magic"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 7,
+  "title": "Magic upgrades",
+  "buttons": [
+   {
+    "call": "buyMagicUpgrade(1)",
+    "label": [
+     {
+      "text": "Gold multiplies its own gain\nCurrently x…\nCosts 2 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(2)",
+    "label": [
+     {
+      "text": "Increases magic gain by 50%\nCosts 3 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(3)",
+    "label": [
+     {
+      "text": "Multiply gold and fire gain by 55.5. Waow.\nCosts 8 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(4)",
+    "label": [
+     {
+      "text": "Magic multiplies its own gain\nCurrently x…\nCosts 12 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(5)",
+    "label": [
+     {
+      "text": "Gold multiplies fire gain\nCurrently x…\nCosts 30 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(6)",
+    "label": [
+     {
+      "text": "Miners increase gold/second\nCurrently x…\nCosts 100 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(7)",
+    "label": [
+     {
+      "text": "Double magic gain. Simple.\nCosts 300 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(8)",
+    "label": [
+     {
+      "text": "Unlock a new platinum upgrade (kept on magic reset)\nCosts 1,500 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(9)",
+    "label": [
+     {
+      "text": "Fire upgrades 2 and 3 are severely boosted\nCosts 4,000 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(10)",
+    "label": [
+     {
+      "text": "Magic upgrades 4 and 6 are boosted\nCosts 20,000 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(11)",
+    "label": [
+     {
+      "text": "Platinum upgrade 7 can be bought an extra 10 times\nCosts 100,000 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(12)",
+    "label": [
+     {
+      "text": "Unlock Magic Challenges\nCosts 400,000 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyMagicUpgrade(13)",
+    "label": [
+     {
+      "text": "Challenge score gain is doubled\nCosts 100,000,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyMagicUpgrade(14)",
+    "label": [
+     {
+      "text": "Fire upgrade 1 is boosted\nCosts 300,000,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyMagicUpgrade(15)",
+    "label": [
+     {
+      "text": "Challenge B1's effect is better\nCosts 1.50e9 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyMagicUpgrade(16)",
+    "label": [
+     {
+      "text": "Magic effect is squared\nCosts 3.00e9 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyMagicUpgrade(17)",
+    "label": [
+     {
+      "text": "Magifolds multiply score gain\nCurrently x…\nCosts 1.00e11 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyMagicUpgrade(18)",
+    "label": [
+     {
+      "text": "Triple magic gain again. Easy peasy.\nCosts 4.00e12 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyMagicUpgrade(19)",
+    "label": [
+     {
+      "text": "Magifold effect is boosted from (x^4) to (x^6)\nCosts 1.00e13 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyMagicUpgrade(20)",
+    "label": [
+     {
+      "text": "Unlock Uranium\nCosts 1.00e16 magic"
+     }
+    ]
+   },
+   {
+    "call": "magicUpgradeBuyMax()",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ],
+    "hiddenAtStart": true
+   }
+  ]
+ },
+ {
+  "index": 8,
+  "title": "Magic challenges",
+  "buttons": [
+   {
+    "call": "activateMagicChallenge(1)",
+    "label": [
+     {
+      "text": "A1"
+     }
+    ]
+   },
+   {
+    "call": "activateMagicChallenge(2)",
+    "label": [
+     {
+      "text": "A2"
+     }
+    ]
+   },
+   {
+    "call": "activateMagicChallenge(3)",
+    "label": [
+     {
+      "text": "B1"
+     }
+    ]
+   },
+   {
+    "call": "activateMagicChallenge(4)",
+    "label": [
+     {
+      "text": "B2"
+     }
+    ]
+   },
+   {
+    "call": "enterExitMagicChallenges()",
+    "label": [
+     {
+      "text": "Enter challenges"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 9,
+  "title": "Alchemy II",
+  "buttons": [
+   {
+    "call": "uraniumConvert()",
+    "label": [
+     {
+      "text": "Convert all platinum into "
+     },
+     {
+      "field": "uraniumToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " uranium ("
+     },
+     {
+      "field": "uraniumConvertCooldown",
+      "fallback": "0"
+     },
+     {
+      "text": ")"
+     }
+    ]
+   },
+   {
+    "call": "buyUraniumUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase platinum gain by 20% (multiplicative)\n("
+     },
+     {
+      "field": "uraniumUpgradesBought",
+      "index": 0,
+      "fallback": "0"
+     },
+     {
+      "text": "/100)\nCosts 100 uranium"
+     }
+    ]
+   },
+   {
+    "call": "buyUraniumUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase uranium gain by 10% (additive) ("
+     },
+     {
+      "field": "uraniumUpgradesBought",
+      "index": 1,
+      "fallback": "0"
+     },
+     {
+      "text": "/20)\nCosts 300 uranium"
+     }
+    ]
+   },
+   {
+    "call": "buyUraniumUpgrade(3)",
+    "label": [
+     {
+      "text": "Double score gain ("
+     },
+     {
+      "field": "uraniumUpgradesBought",
+      "index": 2,
+      "fallback": "0"
+     },
+     {
+      "text": "/5)\nCosts 1,000 uranium"
+     }
+    ]
+   },
+   {
+    "call": "buyUraniumUpgrade(4)",
+    "label": [
+     {
+      "text": "Platinum upgrade 6 is boosted ("
+     },
+     {
+      "field": "uraniumUpgradesBought",
+      "index": 3,
+      "fallback": "0"
+     },
+     {
+      "text": "/1)\nCosts 10,000 uranium"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyUraniumUpgrade(5)",
+    "label": [
+     {
+      "text": "Increase platinum gain tenfold ("
+     },
+     {
+      "field": "uraniumUpgradesBought",
+      "index": 4,
+      "fallback": "0"
+     },
+     {
+      "text": "/10)\nCosts 50,000 uranium"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "uraniumMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 10,
+  "title": "Dark magic upgrades",
+  "buttons": [
+   {
+    "call": "buyDarkMagicUpgrade(1)",
+    "label": [
+     {
+      "text": "Score gain is increased by ^1.30\nCosts 1.00e110 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkMagicUpgrade(2)",
+    "label": [
+     {
+      "text": "Uranium increases magic gain\nCurrently ^…\nCosts 1.00e125 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkMagicUpgrade(3)",
+    "label": [
+     {
+      "text": "You gain 10x as much time spent with your dragon\nCosts 1.00e165 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkMagicUpgrade(4)",
+    "label": [
+     {
+      "text": "Magifold effect is boosted again to (x^8)\nCosts 1.00e240 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkMagicUpgrade(5)",
+    "label": [
+     {
+      "text": "Multiply uranium gain by 100\nCosts 1.00e285 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkMagicUpgrade(6)",
+    "label": [
+     {
+      "text": "Fire upgrade 2 is boosted again\nCosts 1.00e320 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkMagicUpgrade(7)",
+    "label": [
+     {
+      "text": "Score gain is doubled\nCosts 1.00e360 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkMagicUpgrade(8)",
+    "label": [
+     {
+      "text": "Unlock Sigils\nCosts 1.00e450 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkMagicUpgrade(9)",
+    "label": [
+     {
+      "text": "Triple cyan and blue sigil gain\nCosts e120,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(10)",
+    "label": [
+     {
+      "text": "Increase magic gain by ^1.10\nCosts e140,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(11)",
+    "label": [
+     {
+      "text": "Blood multiplies blue fire gain\nCurrently x…\nCosts e300,000,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(12)",
+    "label": [
+     {
+      "text": "Blood multiplies its own gain\nCurrently x…\nCosts e450,000,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(13)",
+    "label": [
+     {
+      "text": "Platinum gain is increased by ^666\nCosts e500,000,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(14)",
+    "label": [
+     {
+      "text": "Plutonium multiplies blood gain\nCurrently x…\nCosts e600,000,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(15)",
+    "label": [
+     {
+      "text": "Multiply plutonium gain by 10\nCosts e675,000,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(16)",
+    "label": [
+     {
+      "text": "Blue fire multiplies red sigil gain\nCurrently x…\nCosts e800,000,000 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(17)",
+    "label": [
+     {
+      "text": "Blood multiplies orange sigil gain\nCurrently x…\nCosts e1.20e9 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(18)",
+    "label": [
+     {
+      "text": "Plutonium multiplies yellow sigil gain (Currently x…)\nCosts e1.45e9 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(19)",
+    "label": [
+     {
+      "text": "Square plutonium gain\nCosts e1.60e9 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyDarkMagicUpgrade(20)",
+    "label": [
+     {
+      "text": "Multiply YSP gain by 1,000\nCosts e1.65e9 magic"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "darkMagicUpgradeBuyMax()",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ],
+    "hiddenAtStart": true
+   }
+  ]
+ },
+ {
+  "index": 11,
+  "title": "Cyan sigils",
+  "buttons": [
+   {
+    "call": "sigilCheck(1)",
+    "label": [
+     {
+      "text": "Reset all previous progress for "
+     },
+     {
+      "field": "cyanSigilsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " cyan sigils\nNext at … gold"
+     }
+    ]
+   },
+   {
+    "call": "buyCyanSigilUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase CSP gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "cyanSigilUpgrade1Cost",
+      "fallback": "1"
+     },
+     {
+      "text": " CSP"
+     }
+    ]
+   },
+   {
+    "call": "buyCyanSigilUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase uranium gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "cyanSigilUpgrade2Cost",
+      "fallback": "20"
+     },
+     {
+      "text": " CSP"
+     }
+    ]
+   },
+   {
+    "call": "buyCyanSigilUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase gold per second\nCurrently ^…\nCosts "
+     },
+     {
+      "field": "cyanSigilUpgrade3Cost",
+      "fallback": "500"
+     },
+     {
+      "text": " CSP"
+     }
+    ]
+   },
+   {
+    "call": "buyCyanSigilUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock blue Sigils\nCosts 20,000 CSP"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 12,
+  "title": "Blue sigils",
+  "buttons": [
+   {
+    "call": "sigilCheck(2)",
+    "label": [
+     {
+      "text": "Reset all previous progress for "
+     },
+     {
+      "field": "blueSigilsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " blue sigils\nNext at … gold"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueSigilUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase BSP gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "blueSigilUpgrade1Cost",
+      "fallback": "1"
+     },
+     {
+      "text": " BSP"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueSigilUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase platinum gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "blueSigilUpgrade2Cost",
+      "fallback": "20"
+     },
+     {
+      "text": " BSP"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueSigilUpgrade(3)",
+    "label": [
+     {
+      "text": "Cyan sigil requirement is lower (…/10)\nCosts "
+     },
+     {
+      "field": "blueSigilUpgrade3Cost",
+      "fallback": "100"
+     },
+     {
+      "text": " BSP"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueSigilUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock Indigo Sigils\nCosts 10,000 BSP"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 13,
+  "title": "Indigo sigils",
+  "buttons": [
+   {
+    "call": "sigilCheck(3)",
+    "label": [
+     {
+      "text": "Reset all previous progress for "
+     },
+     {
+      "field": "indigoSigilsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " indigo sigils\nNext at … gold"
+     }
+    ]
+   },
+   {
+    "call": "buyIndigoSigilUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase ISP gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "indigoSigilUpgrade1Cost",
+      "fallback": "1"
+     },
+     {
+      "text": " ISP"
+     }
+    ]
+   },
+   {
+    "call": "buyIndigoSigilUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase CSP gain again\nCurrently ^…\nCosts "
+     },
+     {
+      "field": "indigoSigilUpgrade2Cost",
+      "fallback": "20"
+     },
+     {
+      "text": " ISP"
+     }
+    ]
+   },
+   {
+    "call": "buyIndigoSigilUpgrade(3)",
+    "label": [
+     {
+      "text": "Gain more time with your dragon\nCurrently x…\nCosts "
+     },
+     {
+      "field": "indigoSigilUpgrade3Cost",
+      "fallback": "400"
+     },
+     {
+      "text": " ISP"
+     }
+    ]
+   },
+   {
+    "call": "buyIndigoSigilUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock Violet Sigils\nCosts 20,000 ISP"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 14,
+  "title": "Violet sigils",
+  "buttons": [
+   {
+    "call": "sigilCheck(4)",
+    "label": [
+     {
+      "text": "Reset all previous progress for "
+     },
+     {
+      "field": "violetSigilsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " violet sigils\nNext at … gold"
+     }
+    ]
+   },
+   {
+    "call": "buyVioletSigilUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase VSP gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "violetSigilUpgrade1Cost",
+      "fallback": "1"
+     },
+     {
+      "text": " VSP"
+     }
+    ]
+   },
+   {
+    "call": "buyVioletSigilUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase BSP gain again\nCurrently ^…\nCosts "
+     },
+     {
+      "field": "violetSigilUpgrade2Cost",
+      "fallback": "5"
+     },
+     {
+      "text": " VSP"
+     }
+    ]
+   },
+   {
+    "call": "buyVioletSigilUpgrade(3)",
+    "label": [
+     {
+      "text": "Magifold effect is boosted again\nCosts 5,000 VSP"
+     }
+    ]
+   },
+   {
+    "call": "buyVioletSigilUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock Pink Sigils\nCosts 10,000,000 VSP"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 15,
+  "title": "LIVE HORROR CAM",
+  "buttons": []
+ },
+ {
+  "index": 16,
+  "title": "Pink sigils",
+  "buttons": [
+   {
+    "call": "sigilCheck(5)",
+    "label": [
+     {
+      "text": "Reset all previous progress for "
+     },
+     {
+      "field": "pinkSigilsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " pink sigils\nNext at … gold"
+     }
+    ]
+   },
+   {
+    "call": "buyPinkSigilUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase PSP gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "pinkSigilUpgrade1Cost",
+      "fallback": "1"
+     },
+     {
+      "text": " PSP"
+     }
+    ]
+   },
+   {
+    "call": "buyPinkSigilUpgrade(2)",
+    "label": [
+     {
+      "text": "Unlock 2 new dark magic upgrades (kept on sigil reset)\nCosts 100,000 PSP"
+     }
+    ]
+   },
+   {
+    "call": "buyPinkSigilUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase score gain\nCurrently ^…\nCosts "
+     },
+     {
+      "field": "pinkSigilUpgrade3Cost",
+      "fallback": "500,000"
+     },
+     {
+      "text": " PSP"
+     }
+    ]
+   },
+   {
+    "call": "buyPinkSigilUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock knowledge\nCosts 100,000,000 PSP"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 17,
+  "title": "Achievements",
+  "buttons": []
+ },
+ {
+  "index": 18,
+  "title": "Achievement unlocked!",
+  "buttons": []
+ },
+ {
+  "index": 19,
+  "title": "Knowledge",
+  "buttons": [
+   {
+    "call": "purchaseKnowledgeTrade(1)",
+    "label": [
+     {
+      "text": "Purchase"
+     }
+    ]
+   },
+   {
+    "call": "purchaseKnowledgeTrade(2)",
+    "label": [
+     {
+      "text": "Purchase"
+     }
+    ]
+   },
+   {
+    "call": "purchaseKnowledgeTrade(3)",
+    "label": [
+     {
+      "text": "Purchase"
+     }
+    ]
+   },
+   {
+    "call": "resetKnowledgeTrades()",
+    "label": [
+     {
+      "text": "Reset trades to level 1 (use if stuck!)"
+     }
+    ]
+   },
+   {
+    "call": "buyKnowledgeUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply knowledge gain from trades\nCurrently x…\nCosts … knowledge"
+     }
+    ]
+   },
+   {
+    "call": "buyKnowledgeUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase uranium gain\nCurrently ^…\nCosts … knowledge"
+     }
+    ]
+   },
+   {
+    "call": "buyKnowledgeUpgrade(3)",
+    "label": [
+     {
+      "text": "Unlock tomes\nCosts 100,000 knowledge"
+     }
+    ]
+   },
+   {
+    "call": "knowledgeMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   },
+   {
+    "call": "knowledgeAutoMaxAll()",
+    "label": [
+     {
+      "text": "Auto max all: On"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 20,
+  "title": "Sigil Automation",
+  "buttons": [
+   {
+    "call": "maxAllSigilUpgrades()",
+    "label": [
+     {
+      "text": "Max cyan to pink sigil upgrades"
+     }
+    ]
+   },
+   {
+    "call": "maxRedSigilUpgrades()",
+    "label": [
+     {
+      "text": "Max red sigil upgrades"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "maxOrangeSigilUpgrades()",
+    "label": [
+     {
+      "text": "Max orange sigil upgrades"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "maxYellowSigilUpgrades()",
+    "label": [
+     {
+      "text": "Max yellow sigil upgrades"
+     }
+    ],
+    "hiddenAtStart": true
+   }
+  ]
+ },
+ {
+  "index": 21,
+  "title": "Tomes",
+  "buttons": [
+   {
+    "call": "buyTome()",
+    "label": [
+     {
+      "text": "Convert your knowledge into a tome\nCosts "
+     },
+     {
+      "field": "tomeCost",
+      "fallback": "100,000"
+     },
+     {
+      "text": " knowledge"
+     }
+    ]
+   },
+   {
+    "call": "buyMaxTomes()",
+    "label": [
+     {
+      "text": "Convert max tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase ISP gain by ^1.30\nCosts 1 tome"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(2)",
+    "label": [
+     {
+      "text": "Total tomes multiply PSP gain\nCurrently x…\nCosts 1 tome"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(3)",
+    "label": [
+     {
+      "text": "Double knowledge gain from trades\nCosts 2 tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(4)",
+    "label": [
+     {
+      "text": "Platinum increases gold/second again\nCosts 2 tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(5)",
+    "label": [
+     {
+      "text": "Tome cost increases more slowly\nCosts 4 tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(6)",
+    "label": [
+     {
+      "text": "Unlock blue fire\nCosts 20 tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(7)",
+    "label": [
+     {
+      "text": "Total tomes multiply knowledge gain\nCurrently x…\nCosts 75 tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(8)",
+    "label": [
+     {
+      "text": "Tome cost increases more slowly again\nCosts 175 tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(9)",
+    "label": [
+     {
+      "text": "Unlock 3 more blue fire upgrades\nCosts 500 tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(10)",
+    "label": [
+     {
+      "text": "Total tomes multiply blue fire gain\nCurrently x…\nCosts 1,000 tomes"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(11)",
+    "label": [
+     {
+      "text": "Blood increases gold gain in hell\nCurrently ^…\nCosts 1,500 tomes"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "buyTomeUpgrade(12)",
+    "label": [
+     {
+      "text": "Unlock Plutonium\nCosts 2,250 tomes\nRequires dark magic upgrade 11"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(13)",
+    "label": [
+     {
+      "text": "Unlock Red sigils\nCosts 2,800 tomes\nRequires plutonium"
+     }
+    ]
+   },
+   {
+    "call": "buyTomeUpgrade(14)",
+    "label": [
+     {
+      "text": "Unlock 2 more hell layers\nCosts 7,500 tomes"
+     }
+    ]
+   },
+   {
+    "call": "tomeUpgradeBuyMax()",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 22,
+  "title": "Blue fire upgrades",
+  "buttons": [
+   {
+    "call": "buyBlueFireUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply blue fire production\nCurrently x…\nCosts … blue fire"
+     }
+    ]
+   },
+   {
+    "call": "blueFireBuyMax(1)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueFireUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase fire production\nCurrently ^…\nCosts … blue fire"
+     }
+    ]
+   },
+   {
+    "call": "blueFireBuyMax(2)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueFireUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase platinum gain\nCurrently ^…\nCosts … blue fire"
+     }
+    ]
+   },
+   {
+    "call": "blueFireBuyMax(3)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueFireUpgrade(4)",
+    "label": [
+     {
+      "text": "Increase magic hardcap\nCurrently ^…\nCosts … blue fire"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "blueFireBuyMax(4)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueFireUpgrade(5)",
+    "label": [
+     {
+      "text": "Multiply dragon time spent cap\nCurrently x…\nCosts … blue fire"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "blueFireBuyMax(5)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyBlueFireUpgrade(6)",
+    "label": [
+     {
+      "text": "Multiply knowledge gain from trades\nCurrently x…\nCosts … blue fire"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "blueFireBuyMax(6)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "blueFireAutoMaxAll()",
+    "label": [
+     {
+      "text": "Auto max all: On"
+     }
+    ]
+   },
+   {
+    "call": "blueFireMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 23,
+  "title": "Blood",
+  "buttons": [
+   {
+    "call": "enterExitHell()",
+    "label": [
+     {
+      "text": "Enter hell"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 24,
+  "title": "Alchemy III",
+  "buttons": [
+   {
+    "call": "plutoniumConvert()",
+    "label": [
+     {
+      "text": "Convert all uranium into "
+     },
+     {
+      "field": "plutoniumToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " plutonium ("
+     },
+     {
+      "field": "plutoniumConvertCooldown",
+      "fallback": "0"
+     },
+     {
+      "text": ")"
+     }
+    ]
+   },
+   {
+    "call": "buyPlutoniumUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase plutonium gain by 5% (additive) ("
+     },
+     {
+      "field": "plutoniumUpgradesBought",
+      "index": 0,
+      "fallback": "0"
+     },
+     {
+      "text": "/40)\nCosts 200 plutonium"
+     }
+    ]
+   },
+   {
+    "call": "buyPlutoniumUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase magic effect ("
+     },
+     {
+      "field": "plutoniumUpgradesBought",
+      "index": 1,
+      "fallback": "0"
+     },
+     {
+      "text": "/8)\nCurrently ^…\nCosts 400 plutonium"
+     }
+    ]
+   },
+   {
+    "call": "buyPlutoniumUpgrade(3)",
+    "label": [
+     {
+      "text": "Plutonium increases sigil gain ("
+     },
+     {
+      "field": "plutoniumUpgradesBought",
+      "index": 2,
+      "fallback": "0"
+     },
+     {
+      "text": "/4)\nCurrently x…\nCosts 800 plutonium"
+     }
+    ]
+   },
+   {
+    "call": "buyPlutoniumUpgrade(4)",
+    "label": [
+     {
+      "text": "Increase blue fire gain by 50% (multiplicative)\n("
+     },
+     {
+      "field": "plutoniumUpgradesBought",
+      "index": 3,
+      "fallback": "0"
+     },
+     {
+      "text": "/10)\nCosts 5,000 plutonium"
+     }
+    ]
+   },
+   {
+    "call": "buyPlutoniumUpgrade(5)",
+    "label": [
+     {
+      "text": "Increase blue fire gain by another 25%\n(multiplicative) ("
+     },
+     {
+      "field": "plutoniumUpgradesBought",
+      "index": 4,
+      "fallback": "0"
+     },
+     {
+      "text": "/20)\nCosts 50,000 plutonium"
+     }
+    ]
+   },
+   {
+    "call": "plutoniumMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 25,
+  "title": "Red sigils",
+  "buttons": [
+   {
+    "call": "sigilCheck(6)",
+    "label": [
+     {
+      "text": "Reset all previous progress for "
+     },
+     {
+      "field": "redSigilsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " red sigils\nNext at … gold"
+     }
+    ]
+   },
+   {
+    "call": "buyRedSigilUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase RSP gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "redSigilUpgrade1Cost",
+      "fallback": "1"
+     },
+     {
+      "text": " RSP"
+     }
+    ]
+   },
+   {
+    "call": "buyRedSigilUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase blue fire gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "redSigilUpgrade2Cost",
+      "fallback": "1,500"
+     },
+     {
+      "text": " RSP"
+     }
+    ]
+   },
+   {
+    "call": "buyRedSigilUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase blood gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "redSigilUpgrade3Cost",
+      "fallback": "50,000"
+     },
+     {
+      "text": " RSP"
+     }
+    ]
+   },
+   {
+    "call": "buyRedSigilUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock orange sigils\nCosts 10,000,000 RSP"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 26,
+  "title": "Orange sigils",
+  "buttons": [
+   {
+    "call": "sigilCheck(7)",
+    "label": [
+     {
+      "text": "Reset all previous progress for "
+     },
+     {
+      "field": "orangeSigilsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " orange sigils\nNext at … gold"
+     }
+    ]
+   },
+   {
+    "call": "buyOrangeSigilUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase OSP gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "orangeSigilUpgrade1Cost",
+      "fallback": "1"
+     },
+     {
+      "text": " OSP"
+     }
+    ]
+   },
+   {
+    "call": "buyOrangeSigilUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase red sigil gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "orangeSigilUpgrade2Cost",
+      "fallback": "2,500"
+     },
+     {
+      "text": " OSP"
+     }
+    ]
+   },
+   {
+    "call": "buyOrangeSigilUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase blood gain again\nCurrently x…\nCosts "
+     },
+     {
+      "field": "orangeSigilUpgrade3Cost",
+      "fallback": "250,000"
+     },
+     {
+      "text": " OSP"
+     }
+    ]
+   },
+   {
+    "call": "buyOrangeSigilUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock yellow sigils\nCosts 10,000,000 OSP"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 27,
+  "title": "Info/credits",
+  "buttons": []
+ },
+ {
+  "index": 28,
+  "title": "Yellow sigils",
+  "buttons": [
+   {
+    "call": "sigilCheck(8)",
+    "label": [
+     {
+      "text": "Reset all previous progress for "
+     },
+     {
+      "field": "yellowSigilsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " yellow sigils\nNext at … gold"
+     }
+    ]
+   },
+   {
+    "call": "buyYellowSigilUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase YSP gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "yellowSigilUpgrade1Cost",
+      "fallback": "1"
+     },
+     {
+      "text": " YSP"
+     }
+    ]
+   },
+   {
+    "call": "buyYellowSigilUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase orange sigil gain\nCurrently x…\nCosts "
+     },
+     {
+      "field": "yellowSigilUpgrade2Cost",
+      "fallback": "4,000"
+     },
+     {
+      "text": " YSP"
+     }
+    ]
+   },
+   {
+    "call": "buyYellowSigilUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase blood gain again\nCurrently x…\nCosts "
+     },
+     {
+      "field": "yellowSigilUpgrade3Cost",
+      "fallback": "2,000,000"
+     },
+     {
+      "text": " YSP"
+     }
+    ]
+   },
+   {
+    "call": "buyYellowSigilUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock HOLY TETRAHEDRONS\nCosts 1.00e12 YSP"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 29,
+  "title": "Holy tetrahedrons",
+  "buttons": [
+   {
+    "call": "holyPolyhedronCheck(1)",
+    "label": [
+     {
+      "text": "Reset all previous progress and ASCEND\nYou will gain "
+     },
+     {
+      "field": "holyTetrahedronsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " holy tetrahedrons\n…"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 30,
+  "title": "Holy tetrahedron tree",
+  "buttons": [
+   {
+    "call": "buyHolyTetrahedronUpgrade(1)",
+    "label": [
+     {
+      "text": "Blue fire gain is\nsquared\nCosts 1 tetrahedron"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(2)",
+    "label": [
+     {
+      "text": "Score gain is\nsquared\nCosts 1 tetrahedron"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(3)",
+    "label": [
+     {
+      "text": "Multiply cyan sigil gain by 1.00e50\nCosts 1 tetrahedron"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(4)",
+    "label": [
+     {
+      "text": "Multiply R-O-Y sigil\ngain by 10\nCosts 1 tetrahedron"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(5)",
+    "label": [
+     {
+      "text": "Multiply platinum\ngain by 1e20\nCosts 2 tetrahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(6)",
+    "label": [
+     {
+      "text": "Multiply uranium gain by 100\nCosts 2 tetrahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(7)",
+    "label": [
+     {
+      "text": "Blood gain is always at least\n1.00e9/s\nCosts 2 tetrahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(8)",
+    "label": [
+     {
+      "text": "Multiply knowledge\ngain by 1.00e150\nCosts 5 tetrahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(9)",
+    "label": [
+     {
+      "text": "Pink sigil gain is\nsquared\nCosts 5 tetrahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(10)",
+    "label": [
+     {
+      "text": "Fire gain is\nincreased by\n^10,000\nCosts 15 tetrahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(11)",
+    "label": [
+     {
+      "text": "Unlock HOLY OCTAHEDRONS\nCosts 50 tetrahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(12)",
+    "label": [
+     {
+      "text": "Unlock Holy Fire\nCosts 2,000\ntetrahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyTetrahedronUpgrade(13)",
+    "label": [
+     {
+      "text": "Multiply holy fire gain by 100\nCosts 50,000 tetras"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 31,
+  "title": "Holy octahedrons",
+  "buttons": [
+   {
+    "call": "holyPolyhedronCheck(2)",
+    "label": [
+     {
+      "text": "Reset all previous progress and ASCEND\nYou will gain "
+     },
+     {
+      "field": "holyOctahedronsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " holy octahedrons\n…"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 32,
+  "title": "Holy octahedron tree",
+  "buttons": [
+   {
+    "call": "buyHolyOctahedronUpgrade(1)",
+    "label": [
+     {
+      "text": "Tetrahedrons\nmultiply R-O-Y sigil gain\nCosts 1 octahedron"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyOctahedronUpgrade(2)",
+    "label": [
+     {
+      "text": "Multiply gold gain\nin hell by 1.00e250\nCosts 1 octahedron"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyOctahedronUpgrade(3)",
+    "label": [
+     {
+      "text": "Multiply blood gain\nby 1.00e9^(hell\nlayer)\nCosts 1 octahedron"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyOctahedronUpgrade(4)",
+    "label": [
+     {
+      "text": "Multiply blue fire gain by 1e250\nCosts 2 octahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyOctahedronUpgrade(5)",
+    "label": [
+     {
+      "text": "Gain 1 free tetrahedron per\nsecond\nCosts 4 octahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyOctahedronUpgrade(6)",
+    "label": [
+     {
+      "text": "Score gain is\nincreased by ^10\nCosts 2 octahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyOctahedronUpgrade(7)",
+    "label": [
+     {
+      "text": "Plutonium^0.5 multiplies blue fire gain\nCosts 50 octahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyOctahedronUpgrade(8)",
+    "label": [
+     {
+      "text": "Octahedrons\nmultiply holy fire gain\nCosts 750 octahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyOctahedronUpgrade(9)",
+    "label": [
+     {
+      "text": "Multiply knowledge\ngain by 1.00e3,000\nCosts 25,000 octas"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 33,
+  "title": "Holy fire upgrades",
+  "buttons": [
+   {
+    "call": "buyHolyFireUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply holy fire production\nCurrently x…\nCosts … holy fire"
+     }
+    ]
+   },
+   {
+    "call": "holyFireBuyMax(1)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyFireUpgrade(2)",
+    "label": [
+     {
+      "text": "Multiply holy tetrahedron gain\nCurrently x……\nCosts … holy fire"
+     }
+    ]
+   },
+   {
+    "call": "holyFireBuyMax(2)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyFireUpgrade(3)",
+    "label": [
+     {
+      "text": "Multiply dragon time spent cap again\nCurrently x…\nCosts … holy fire"
+     }
+    ]
+   },
+   {
+    "call": "holyFireBuyMax(3)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyFireUpgrade(4)",
+    "label": [
+     {
+      "text": "Increase plutonium gain\nCurrently ^…\nCosts … holy fire"
+     }
+    ]
+   },
+   {
+    "call": "holyFireBuyMax(4)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyFireUpgrade(5)",
+    "label": [
+     {
+      "text": "Multiply holy octahedron gain\nCurrently x…\nCosts … holy fire"
+     }
+    ]
+   },
+   {
+    "call": "holyFireBuyMax(5)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyFireUpgrade(6)",
+    "label": [
+     {
+      "text": "Multiply holy dodecahedron gain\nCurrently x……\nCosts … holy fire"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "holyFireBuyMax(6)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "holyFireAutoMaxAll()",
+    "label": [
+     {
+      "text": "Auto max all: On"
+     }
+    ]
+   },
+   {
+    "call": "holyFireMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 34,
+  "title": "Void magic upgrades",
+  "buttons": [
+   {
+    "call": "buyVoidMagicUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply holy octahedron gain by 10\nCosts e1.25e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(2)",
+    "label": [
+     {
+      "text": "Multiply OSP gain by 1.00e20\nCosts e1.40e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase CSP gain by ^2.00\nCosts e1.55e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(4)",
+    "label": [
+     {
+      "text": "Unlock HOLY DODECAHEDRONS\nCosts e1.65e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(5)",
+    "label": [
+     {
+      "text": "FIRE EQUALIZER I - Fire gain is always equal to gold^(1.00e-10)\nCosts e2.00e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(6)",
+    "label": [
+     {
+      "text": "FIRE EQUALIZER II - Fire gain is always equal to gold\nCosts e3.00e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(7)",
+    "label": [
+     {
+      "text": "BLOOD EQUALIZER - Blood gain is always equal to log10(gold)\nCosts e4.00e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(8)",
+    "label": [
+     {
+      "text": "Unlock a new holy fire upgrade\nCosts e6.50e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(9)",
+    "label": [
+     {
+      "text": "Multiply dragon time spent cap by 10,000\nCosts e9.60e10 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(10)",
+    "label": [
+     {
+      "text": "Increase holy octahedron gain by ^1.25\nCosts e1.20e11 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(11)",
+    "label": [
+     {
+      "text": "Planets multiply holy polyhedron gain (x^1.5)\nCosts e2.25e11 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(12)",
+    "label": [
+     {
+      "text": "Multiply knowledge gain by e12,000\nCosts e3.40e11 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(13)",
+    "label": [
+     {
+      "text": "Increase uranium gain by ^1.00e30\nCosts e4.60e11 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(14)",
+    "label": [
+     {
+      "text": "Multiply planet effect by 1.2\nCosts e5.25e12 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(15)",
+    "label": [
+     {
+      "text": "Supercluster effect is improved\nCosts e2.00e13 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(16)",
+    "label": [
+     {
+      "text": "Unlock Cosmic Plague\nCosts e4.25e13 magic"
+     }
+    ]
+   },
+   {
+    "call": "buyVoidMagicUpgrade(17)",
+    "label": [
+     {
+      "text": "Unlock Oganesson\nCosts e3.75e16 magic"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 35,
+  "title": "Holy dodecahedrons",
+  "buttons": [
+   {
+    "call": "holyPolyhedronCheck(3)",
+    "label": [
+     {
+      "text": "Reset all previous progress and ASCEND\nYou will gain "
+     },
+     {
+      "field": "holyDodecahedronsToGet",
+      "fallback": "0"
+     },
+     {
+      "text": " holy dodecahedrons\n…"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 36,
+  "title": "Holy dodecahedron tree",
+  "buttons": [
+   {
+    "call": "buyHolyDodecahedronUpgrade(1)",
+    "label": [
+     {
+      "text": "Octahedrons\nmultiply R-O-Y sigil gain\nCosts 1 dodecahedron"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyDodecahedronUpgrade(2)",
+    "label": [
+     {
+      "text": "Dodecahedrons\nmultiply blood gain\n(x^10)\nCosts 2 dodecahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyDodecahedronUpgrade(3)",
+    "label": [
+     {
+      "text": "Multiply plutonium gain by 1.00e20\nCosts 6 dodecahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyDodecahedronUpgrade(4)",
+    "label": [
+     {
+      "text": "Multiply red sigil gain by 1.00e20\nCosts 12 dodecahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyDodecahedronUpgrade(5)",
+    "label": [
+     {
+      "text": "Red sigils increase\ngold gain\nCosts 1,000 dodecahedrons"
+     }
+    ]
+   },
+   {
+    "call": "buyHolyDodecahedronUpgrade(6)",
+    "label": [
+     {
+      "text": "Dodecahedrons\nmultiply holy fire gain\nCosts 150,000 dodecas"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 37,
+  "title": "Planets",
+  "buttons": [
+   {
+    "call": "formPlanet(1)",
+    "label": [
+     {
+      "text": "Form 1e30 holy tetrahedrons into a planet"
+     }
+    ]
+   },
+   {
+    "call": "planetBuyMax()",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "formPlanet(2)",
+    "label": [
+     {
+      "text": "Form 1e15 holy octahedrons into a planet"
+     }
+    ]
+   },
+   {
+    "call": "formPlanet(3)",
+    "label": [
+     {
+      "text": "Form 100,000 holy dodecahedrons into a planet"
+     }
+    ]
+   },
+   {
+    "call": "gainSupercluster()",
+    "label": [
+     {
+      "text": "Gain a supercluster\nRequires "
+     },
+     {
+      "field": "superclusterCost",
+      "fallback": "25"
+     },
+     {
+      "text": " planets"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 38,
+  "title": "THE OMNIVERSAL HYPERGODS",
+  "buttons": [
+   {
+    "call": "defeatHypergod()",
+    "label": [
+     {
+      "text": "Defeat this hypergod and claim a section of the omniverse\nRequires … gold"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 39,
+  "title": "Cosmic plague",
+  "buttons": [
+   {
+    "call": "gainSpore()",
+    "label": [
+     {
+      "text": "Gain a spore\nCosts "
+     },
+     {
+      "field": "sporeCost",
+      "fallback": "e1.00e7,500"
+     },
+     {
+      "text": " gold"
+     }
+    ]
+   },
+   {
+    "call": "gainMaxSpores()",
+    "label": [
+     {
+      "text": "Gain max"
+     }
+    ]
+   },
+   {
+    "call": "buyPlagueUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply plague gain\nCurrently x1.00\nCosts 25 plague"
+     }
+    ]
+   },
+   {
+    "call": "plagueBuyMax(1)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyPlagueUpgrade(2)",
+    "label": [
+     {
+      "text": "Multiply planet effect\nCurrently x1.00\nCosts 100 plague"
+     }
+    ]
+   },
+   {
+    "call": "plagueBuyMax(2)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyPlagueUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase blue fire gain\nCurrently ^1.00\nCosts 100,000 plague"
+     }
+    ]
+   },
+   {
+    "call": "plagueBuyMax(3)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyPlagueUpgrade(4)",
+    "label": [
+     {
+      "text": "Increase holy fire gain\nCurrently ^1.000\nCosts 1,000,000 plague"
+     }
+    ]
+   },
+   {
+    "call": "plagueBuyMax(4)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "buyPlagueUpgrade(5)",
+    "label": [
+     {
+      "text": "Increase oganesson gain\nCurrently x1.00\nCosts 1.00e13 plague"
+     }
+    ],
+    "hiddenAtStart": true
+   },
+   {
+    "call": "plagueBuyMax(5)",
+    "label": [
+     {
+      "text": "Buy max"
+     }
+    ]
+   },
+   {
+    "call": "plagueAutoMaxAll()",
+    "label": [
+     {
+      "text": "Auto max all: On"
+     }
+    ]
+   },
+   {
+    "call": "plagueMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 40,
+  "title": "Alchemy IV",
+  "buttons": [
+   {
+    "call": "buyOganessonUpgrade(1)",
+    "label": [
+     {
+      "text": "Increase plutonium gain ("
+     },
+     {
+      "field": "oganessonUpgradesBought",
+      "index": 0,
+      "fallback": "0"
+     },
+     {
+      "text": "/10)\nCurrently ^…\nCosts 100 oganesson"
+     }
+    ]
+   },
+   {
+    "call": "buyOganessonUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase cosmic plague gain ("
+     },
+     {
+      "field": "oganessonUpgradesBought",
+      "index": 1,
+      "fallback": "0"
+     },
+     {
+      "text": "/10)\nCurrently x…\nCosts 1,000 oganesson"
+     }
+    ]
+   },
+   {
+    "call": "buyOganessonUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase planet effect ("
+     },
+     {
+      "field": "oganessonUpgradesBought",
+      "index": 2,
+      "fallback": "0"
+     },
+     {
+      "text": "/10)\nCurrently +…\nCosts 2,000 oganesson"
+     }
+    ]
+   },
+   {
+    "call": "buyOganessonUpgrade(4)",
+    "label": [
+     {
+      "text": "Gain a new cosmic plague upgrade ("
+     },
+     {
+      "field": "oganessonUpgradesBought",
+      "index": 3,
+      "fallback": "0"
+     },
+     {
+      "text": "/1)\nCosts 5,000 oganesson"
+     }
+    ]
+   },
+   {
+    "call": "buyOganessonUpgrade(5)",
+    "label": [
+     {
+      "text": "Increase blue fire gain based on oganesson ("
+     },
+     {
+      "field": "oganessonUpgradesBought",
+      "index": 4,
+      "fallback": "0"
+     },
+     {
+      "text": "/5)\nCurrently ^…\nCosts 10,000 oganesson"
+     }
+    ]
+   },
+   {
+    "call": "buyOganessonUpgrade(6)",
+    "label": [
+     {
+      "text": "Increase cosmic plague gain again ("
+     },
+     {
+      "field": "oganessonUpgradesBought",
+      "index": 5,
+      "fallback": "0"
+     },
+     {
+      "text": "/10)\nCurrently x…\nCosts 100,000 oganesson"
+     }
+    ]
+   },
+   {
+    "call": "buyOganessonUpgrade(7)",
+    "label": [
+     {
+      "text": "Increase essence gain ("
+     },
+     {
+      "field": "oganessonUpgradesBought",
+      "index": 6,
+      "fallback": "0"
+     },
+     {
+      "text": "/10)\nCurrently x…\nCosts 5,000,000 oganesson"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 41,
+  "title": "Light essence",
+  "buttons": [
+   {
+    "call": "buyLightEssenceUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply light essence gain\nCurrently x1.00\nCosts 100 light essence"
+     }
+    ]
+   },
+   {
+    "call": "buyLightEssenceUpgrade(2)",
+    "label": [
+     {
+      "text": "Multiply cosmic plague gain\nCurrently x1.00\nCosts 600 light essence"
+     }
+    ]
+   },
+   {
+    "call": "buyLightEssenceUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase pink sigil gain\nCurrently ^1.00\nCosts 3,000 light essence"
+     }
+    ]
+   },
+   {
+    "call": "lightEssenceMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 42,
+  "title": "Dark essence",
+  "buttons": [
+   {
+    "call": "buyDarkEssenceUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply dark essence gain\nCurrently x1.00\nCosts 100 dark essence"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkEssenceUpgrade(2)",
+    "label": [
+     {
+      "text": "Multiply oganesson gain\nCurrently x1.00\nCosts 1,000 dark essence"
+     }
+    ]
+   },
+   {
+    "call": "buyDarkEssenceUpgrade(3)",
+    "label": [
+     {
+      "text": "Multiply knowledge gain\nCurrently x1.00\nCosts 10,000 dark essence"
+     }
+    ]
+   },
+   {
+    "call": "darkEssenceMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 43,
+  "title": "Death essence",
+  "buttons": [
+   {
+    "call": "buyDeathEssenceUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply death essence gain\nCurrently x1.00\nCosts 1,000 death essence"
+     }
+    ]
+   },
+   {
+    "call": "buyDeathEssenceUpgrade(2)",
+    "label": [
+     {
+      "text": "Multiply cyan sigil gain\nCurrently x1.00\nCosts 10,000 death essence"
+     }
+    ]
+   },
+   {
+    "call": "buyDeathEssenceUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase uranium gain\nCurrently ^1.00…\nCosts 200,000 death essence"
+     }
+    ]
+   },
+   {
+    "call": "buyDeathEssenceUpgrade(4)",
+    "label": [
+     {
+      "text": "Multiply cosmic plague gain again\nCurrently x1.00\nCosts 10,000,000 death essence"
+     }
+    ]
+   },
+   {
+    "call": "buyDeathEssenceUpgrade(5)",
+    "label": [
+     {
+      "text": "Multiply light/dark essence gain\nCurrently x1.00\nCosts 1.00e40 death essence"
+     }
+    ]
+   },
+   {
+    "call": "deathEssenceMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 44,
+  "title": "Nuclear pasta",
+  "buttons": [
+   {
+    "call": "extendNuclearPasta()",
+    "label": [
+     {
+      "text": "Extend this state by 60 seconds"
+     }
+    ]
+   },
+   {
+    "call": "gainNuclearPasta()",
+    "label": [
+     {
+      "text": "Gain a nuclear pasta\nCosts "
+     },
+     {
+      "field": "nuclearPastaCost",
+      "fallback": "ee3,500,000"
+     },
+     {
+      "text": " gold"
+     }
+    ]
+   },
+   {
+    "call": "gainMaxPasta()",
+    "label": [
+     {
+      "text": "Gain max"
+     }
+    ]
+   },
+   {
+    "call": "buyNuclearPastaUpgrade(1)",
+    "label": [
+     {
+      "text": "Gnocchi positive effect is permanent, and replace gnocchi with a new pasta state\nCosts ee7,500,000 gold"
+     }
+    ]
+   },
+   {
+    "call": "buyNuclearPastaUpgrade(2)",
+    "label": [
+     {
+      "text": "Spaghetti positive effect is permanent, and replace spaghetti with a new pasta state\nCosts ee120,000,000 gold"
+     }
+    ]
+   },
+   {
+    "call": "buyNuclearPastaUpgrade(3)",
+    "label": [
+     {
+      "text": "Waffles positive effect is permanent\nCosts ee250,000,000 gold"
+     }
+    ]
+   },
+   {
+    "call": "buyNuclearPastaUpgrade(4)",
+    "label": [
+     {
+      "text": "Lasagna and antispaghetti positive effects are permanent, with no more negative effects\nCosts ee750,000,000 gold"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 45,
+  "title": "Finality essence",
+  "buttons": [
+   {
+    "call": "buyFinalityEssenceUpgrade(1)",
+    "label": [
+     {
+      "text": "Multiply finality essence gain\nCurrently x1.00\nCosts 1,000 finality essence"
+     }
+    ]
+   },
+   {
+    "call": "buyFinalityEssenceUpgrade(2)",
+    "label": [
+     {
+      "text": "Increase holy fire gain\nCurrently ^1.00\nCosts 4,000 finality essence"
+     }
+    ]
+   },
+   {
+    "call": "buyFinalityEssenceUpgrade(3)",
+    "label": [
+     {
+      "text": "Increase plutonium gain\nCurrently ^1.00\nCosts 1.00e15 finality essence"
+     }
+    ]
+   },
+   {
+    "call": "buyFinalityEssenceUpgrade(4)",
+    "label": [
+     {
+      "text": "Increase light/dark essence gain\nCurrently x1.00\nCosts 1.00e20 finality essence"
+     }
+    ]
+   },
+   {
+    "call": "finalityEssenceMaxAll()",
+    "label": [
+     {
+      "text": "Max all"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "index": 46,
+  "title": "Finality Cubes",
+  "buttons": [
+   {
+    "call": "gainFinalityCube()",
+    "label": [
+     {
+      "text": "Gain a finality cube\nCosts "
+     },
+     {
+      "field": "finalityCubeCost",
+      "fallback": "ee7.50e9"
+     },
+     {
+      "text": " gold"
+     }
+    ]
+   },
+   {
+    "call": "gainMaxFinalityCubes()",
+    "label": [
+     {
+      "text": "Gain max"
+     }
+    ]
+   },
+   {
+    "call": "boostFinalityCubes()",
+    "label": [
+     {
+      "text": "Boost your finality cubes\nCosts "
+     },
+     {
+      "field": "finalityBoostCost",
+      "fallback": "ee2.50e10"
+     },
+     {
+      "text": " gold"
+     }
+    ]
+   },
+   {
+    "call": "boostFinalityBoosts()",
+    "label": [
+     {
+      "text": "Boost your finality cube boosts\nCosts "
+     },
+     {
+      "field": "finalityBoostBoostCost",
+      "fallback": "ee1.50e11"
+     },
+     {
+      "text": " gold"
+     }
+    ]
+   }
+  ]
+ }
+]

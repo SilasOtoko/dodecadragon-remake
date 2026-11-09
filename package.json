@@ -9,17 +9,24 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest run",
-    "gen:state": "node tools/extract-reset.cjs reference/original > tools/reset-fields.json && node tools/gen-state.cjs tools/reset-fields.json src/engine/state.ts docs/save-fields.md"
+    "gen:state": "node tools/extract-reset.cjs reference/original > tools/reset-fields.json && node tools/gen-state.cjs tools/reset-fields.json src/engine/state.ts docs/save-fields.md",
+    "gen:engine": "node tools/gen-constants.cjs reference/original && node tools/strip-dom.cjs reference/original/scripts reference/stripped && node tools/port-engine.cjs reference/stripped src/engine/generated && node tools/gen-debug-layout.cjs reference/original",
+    "test:quick": "vitest run src/engine"
   },
   "dependencies": {
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@babel/generator": "^7.29.13",
+    "@babel/parser": "^7.29.13",
+    "@babel/traverse": "^7.29.13",
+    "@types/jsdom": "^30.0.0",
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^26.1.0",
     "oxlint": "^1.90.0",
     "typescript": "~7.0.2",
     "vite": "^8.3.6",
