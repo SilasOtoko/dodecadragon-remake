@@ -110,6 +110,11 @@ export class Engine {
     script.updateSmall(this);
   }
 
+  /** One recalculation, as the original's updateSmall() (what every click on its page triggered). */
+  recalculate(): void {
+    script.updateSmall(this);
+  }
+
   /** Switches tab. Opening Achievements (3) stops the "new achievement" flash, as in the original. */
   setTab(tab: number): void {
     this.state.currentTab = tab;

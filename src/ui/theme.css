@@ -1,0 +1,133 @@
+/* DodecaDragons remake: pixel art set on an illuminated manuscript.
+   Parchment leaves, iron-gall ink, the original's dragon green for buying, wax-seal red for resets,
+   gilt for gold. Alagard (the original's pixel font) for headings and the hoard; Alegreya for text. */
+
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Alagard";
+    src: url("/fonts/alagard.woff") format("woff");
+    font-display: swap;
+}
+
+@theme {
+    --color-parchment: #efe3c6;
+    --color-vellum: #f7efdc;
+    --color-vellum-500: #473c39;
+    --color-vellum-800: #271f16;
+    --color-ink: #2a1f14;
+    --color-ink-faded: #6b5638;
+    --color-rule: #c9b38a;
+    --color-dragon-200: #3d6e14;
+    --color-dragon-100: #8cc44f;
+    --color-dragon-ink: #f7efdc;
+    --color-wax: #8a2c1c;
+    --color-gilt-200: #85600f;
+    --color-gilt-100: #e0b04a;
+    --shadow: 0 1px 0 rgba(90, 60, 20, 0.18);
+
+    --font-display: "Alagard", "Alegreya", Georgia, serif;
+    --default-font-family: "Alegreya", Georgia, "Times New Roman", serif;
+
+    --animate-fade-out-up: fade-out-up 0.5s ease-out forwards;
+
+    @keyframes fade-out-up {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-1rem);
+        }
+    }
+}
+
+@layer components {
+    .text-outline {
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+
+    .button-shadowed {
+        outline: 2px solid transparent;
+        background-color: var(--color-vellum-800);
+        &:active {
+            transform: translateY(2px);
+        }
+        &:hover,
+        &:focus-visible {
+            outline: 2px solid var(--color-dragon-ink);
+        }
+        box-shadow:
+            inset 2px 2px 0 rgba(66, 52, 36, 0.4),
+            inset -2px -2px 0 rgba(0, 0, 0, 0.2),
+            0 4px 0 var(--parchment);
+    }
+
+    .button-shadowed--disabled {
+        outline: 2px solid transparent;
+        &:active {
+            transform: translateY(2px);
+        }
+        &:hover,
+        &:focus-visible {
+            outline: 2px solid var(--color-dragon-ink);
+        }
+    }
+
+    .button-shadowed--green {
+        outline: 2px solid transparent;
+        &:active {
+            transform: translateY(2px);
+        }
+        &:hover,
+        &:focus-visible {
+            outline: 2px solid var(--color-dragon-ink);
+        }
+        box-shadow:
+            inset 2px 2px 0 rgba(255, 255, 255, 0.4),
+            inset -2px -2px 0 rgba(0, 0, 0, 0.2),
+            0 4px 0 #145a32;
+    }
+
+    .fantasy-border {
+        position: relative;
+        border: 2px solid #44403c;
+        border-radius: 15px;
+    }
+}
+
+/* Candlelit: the same palette with the page in shadow. */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --parchment: #1c160f;
+        --vellum: #271f16;
+        --ink: #eadcc0;
+        --ink-faded: #b49f7f;
+        --rule: #4a3b28;
+        --dragon-ink: #1c160f;
+        --wax: #e07a5f;
+        --gilt: #e0b04a;
+        --shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        color-scheme: dark;
+    }
+}
+img.px {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    flex: none;
+}
+:focus-visible {
+    outline: 2px solid var(--gilt);
+    outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}

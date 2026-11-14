@@ -13,9 +13,9 @@ A mobile-friendly remake of [DodecaDragons](https://demonin.com/games/dodecaDrag
 
 **Phase 1 (engine) working:** the whole game runs in `src/engine/` with no page, and matches the original exactly in side-by-side tests from a new game and all 38 saves. See [docs/engine.md](docs/engine.md) for how it's built and tested, and what's not covered yet.
 
-**See it running:** `npm run dev`, then open the address it prints. Until the real interface exists, the app is an engine debug page: live resources, the original's buttons grouped by the original's panels (shown as you unlock them), save import/export and a state inspector. Save codes move between it and the original game in both directions. Numbers the original's page code calculated just for display (like "Currently x…") show as "…" until the real interface; the State box has every saved value.
+**Phase 3 (interface) started:** the first era (gold, dragon, fire, alchemy, magic) is playable in the new parchment interface, checked screen by screen against the original's own page. See [docs/ui.md](docs/ui.md).
 
-**Next, Phase 2:** design the parchment, phone-first interface.
+**Play it:** `npm run dev`, then open the address it prints. The engine debug page is at `#debug` (for example http://localhost:5173/#debug) and covers the whole game, including the parts the new interface doesn't have yet.
 
 ## Layout
 
@@ -27,9 +27,10 @@ src/engine/            the game engine (no page)
   state.ts, constants.ts, format.ts, save.ts
 src/content/text.ts    names and descriptions from the original
 src/parity/            the original-vs-port test harness
-src/debug/             the engine debug page (temporary app)
+src/ui/                the new interface (see docs/ui.md)
+src/debug/             the engine debug page (#debug)
 src/vendor/            the original's break_eternity.js build (don't replace it with npm's)
-src/main.tsx           app entry (shows the debug page until Phase 3)
+src/main.tsx           app entry: the game, or the debug page at #debug
 public/                art and fonts from the original
 reference/original/    unmodified copy of the original game
 reference/stripped/    the original minus page updates (generated, for reading)
