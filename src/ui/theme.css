@@ -12,12 +12,16 @@
 
 @theme {
     --color-parchment: #efe3c6;
+    --color-parchment-900: #1c160f;
     --color-vellum: #f7efdc;
-    --color-vellum-500: #473c39;
+    --color-vellum-400: #675032;
+    --color-vellum-500: #4a3b28;
     --color-vellum-800: #271f16;
-    --color-ink: #2a1f14;
+    --color-ink-100: #eadcc0;
+    --color-ink-900: #2a1f14;
     --color-ink-faded: #6b5638;
     --color-rule: #c9b38a;
+    --color-rule-600: #4a3b28;
     --color-dragon-200: #3d6e14;
     --color-dragon-100: #8cc44f;
     --color-dragon-ink: #f7efdc;
@@ -54,13 +58,16 @@
 
     .button-shadowed {
         outline: 2px solid transparent;
-        background-color: var(--color-vellum-800);
+        background-color: var(--color-vellum-500);
+        color: var(--color-ink-100);
+
         &:active {
             transform: translateY(2px);
         }
         &:hover,
         &:focus-visible {
             outline: 2px solid var(--color-dragon-ink);
+            background-color: var(--color-vellum-400);
         }
         box-shadow:
             inset 2px 2px 0 rgba(66, 52, 36, 0.4),
@@ -70,12 +77,17 @@
 
     .button-shadowed--disabled {
         outline: 2px solid transparent;
-        &:active {
-            transform: translateY(2px);
-        }
-        &:hover,
-        &:focus-visible {
-            outline: 2px solid var(--color-dragon-ink);
+        background-color: var(--color-parchment-900);
+        color: var(--ink-faded);
+
+        &:not(:disabled) {
+            &:active {
+                transform: translateY(2px);
+            }
+            &:hover,
+            &:focus-visible {
+                outline: 2px solid var(--color-dragon-ink);
+            }
         }
     }
 

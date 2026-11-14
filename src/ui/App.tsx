@@ -122,7 +122,7 @@ export default function App() {
   );
 
   return (
-    <div className="app lining-nums">
+    <div className="app lining-nums bg-parchment-900">
       <header className="strip" aria-label="Resources">
         <h1 className="font-display text-2xl md:text-3xl">DodecaDragons</h1>
         <ul className="mt-4">
@@ -147,27 +147,29 @@ export default function App() {
         </ul>
       </header>
 
-      <nav className="tabs" aria-label="Screens">
-        {tabs.map((t) => (
-          <button
-            key={t.id}
-            type="button"
-            className="tab rounded hover:cursor-pointer border-2 border-transparent hover:border-slate-600 transition-all duration-200 bg-transparent aria-[current=page]:bg-slate-800"
-            aria-current={t.id === tab.id ? 'page' : undefined}
-            onClick={() => choose(t.id)}
-          >
-            <Icon
-              src={
-                t.id === 'dragon'
-                  ? `img/iconDragon${Math.min(s.dragonStage, 12)}.png`
-                  : t.icon
-              }
-              size={24}
-            />
-            <span>{t.name}</span>
-          </button>
-        ))}
-      </nav>
+      <div className="lg:h-screen lg:border-r lg:border-rule-600">
+        <nav className="tabs" aria-label="Screens">
+          {tabs.map((t) => (
+            <button
+              key={t.id}
+              type="button"
+              className="tab rounded hover:cursor-pointer border-2 border-transparent hover:border-slate-600 transition-all duration-200 bg-transparent aria-[current=page]:bg-slate-800"
+              aria-current={t.id === tab.id ? 'page' : undefined}
+              onClick={() => choose(t.id)}
+            >
+              <Icon
+                src={
+                  t.id === 'dragon'
+                    ? `img/iconDragon${Math.min(s.dragonStage, 12)}.png`
+                    : t.icon
+                }
+                size={24}
+              />
+              <span>{t.name}</span>
+            </button>
+          ))}
+        </nav>
+      </div>
 
       <main className="screen">
         {s.unlocks > COVERED_UNLOCK && tab.id !== 'settings' && (

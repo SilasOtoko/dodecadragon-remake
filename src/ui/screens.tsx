@@ -126,7 +126,7 @@ export function HoardScreen() {
             call="buyMiner()"
             disabled={miner.disabled}
             allowed={miner.allowed}
-            className={`price price-wide rounded px-8 py-4 flex gap-3 text-outline hover:cursor-pointer ${miner.disabled ? 'button-shadowed--disabled' : 'button-shadowed'}`}
+            className={`price price-wide rounded px-8 py-4 flex gap-3 text-outline hover:not-disabled:cursor-pointer transition duration-200 ${miner.disabled ? 'button-shadowed--disabled' : 'button-shadowed'}`}
           >
             <span>Hire a miner</span>
             <Amount value={miner.cost} resource="gold" name={false} />

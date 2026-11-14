@@ -270,23 +270,10 @@ a {
     gap: 8px;
     min-height: 44px;
     padding: 6px 14px;
-    color: var(--ink);
     border: 1px solid var(--dragon);
     border-radius: 4px;
-    cursor: pointer;
     user-select: none;
     touch-action: manipulation;
-}
-.price:hover:not(:disabled) {
-    background: color-mix(in srgb, var(--dragon) 10%, var(--parchment));
-}
-.price:active:not(:disabled) {
-    background: color-mix(in srgb, var(--dragon) 20%, var(--parchment));
-}
-.price:disabled {
-    border-color: var(--rule);
-    color: var(--ink-faded);
-    cursor: default;
 }
 .price-wide {
     flex: 1 1 auto;
@@ -603,7 +590,6 @@ textarea {
         gap: 2px;
         background: transparent;
         border: 0;
-        border-right: 1px solid var(--rule);
         padding: 8px 12px 24px;
     }
     .tab {
