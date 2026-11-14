@@ -1,0 +1,628 @@
+.fantasy-border::before,
+.fantasy-border::after,
+.fantasy-border__inner::before,
+.fantasy-border__inner::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("img/panel-border.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.fantasy-border::before {
+    top: -2px;
+    left: -2px;
+    transform: rotate(0deg);
+}
+
+.fantasy-border::after {
+    top: -2px;
+    right: -2px;
+    transform: rotate(90deg);
+}
+
+.fantasy-border__inner::before {
+    bottom: -2px;
+    left: -2px;
+    transform: rotate(-90deg);
+}
+
+.fantasy-border__inner::after {
+    bottom: -2px;
+    right: -2px;
+    transform: rotate(180deg);
+}
+
+/* Keep above, replace below */
+
+.app {
+    min-height: 100dvh;
+    padding-bottom: calc(var(--tabbar) + env(safe-area-inset-bottom, 0px));
+}
+
+/* ---- Ledger strip: what you own, always in view ---- */
+.strip {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--vellum);
+    border-bottom: 1px solid var(--rule);
+    box-shadow: var(--shadow);
+    padding: calc(env(safe-area-inset-top, 0px) + 8px) var(--gutter-r) 8px
+        var(--gutter);
+}
+.strip-title {
+    display: none;
+}
+.strip-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 6px 18px;
+    align-items: baseline;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.strip-list::-webkit-scrollbar {
+    display: none;
+}
+.strip-list li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: none;
+    white-space: nowrap;
+}
+.strip-amount {
+    font-weight: 700;
+}
+.strip-name {
+    color: var(--ink-faded);
+    font-size: var(--step--1);
+}
+.strip-rate {
+    color: var(--dragon);
+    font-size: var(--step--1);
+}
+.strip-gold {
+    flex-basis: 100%;
+}
+.strip-gold .strip-amount {
+    font: 400 var(--step-2)/1.1 var(--display);
+    color: var(--gilt);
+}
+.strip-gold .strip-name {
+    display: none;
+}
+/* gold gets its own line; the rest scroll sideways beneath it */
+.strip-list {
+    flex-wrap: wrap;
+}
+.strip-list li:not(.strip-gold) {
+    order: 2;
+}
+
+/* ---- Tabs: bottom bar on phones ---- */
+.tabs {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+    display: flex;
+    justify-content: space-around;
+    background: var(--vellum);
+    border-top: 1px solid var(--rule);
+    padding: 4px var(--gutter-r) calc(4px + env(safe-area-inset-bottom, 0px))
+        var(--gutter);
+}
+.tab {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: var(--ink-faded);
+    font-size: var(--step--1);
+}
+.tab[aria-current="page"] {
+    color: var(--ink);
+    font-weight: 700;
+}
+.tab img {
+    opacity: 0.8;
+}
+.tab[aria-current="page"] img {
+    opacity: 1;
+}
+
+/* ---- Screen ---- */
+.screen {
+    display: grid;
+    gap: 16px;
+    align-content: start;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 16px var(--gutter-r) 32px var(--gutter);
+}
+
+/* A leaf of vellum: one section of a screen */
+.leaf {
+    box-shadow: var(--shadow);
+    padding: 1.25rem;
+    display: grid;
+    gap: 12px;
+    min-width: 0;
+}
+.leaf-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.leaf-aside {
+    font-weight: 700;
+}
+.muted {
+    color: var(--ink-faded);
+}
+.warn {
+    color: var(--wax);
+    font-weight: 700;
+}
+.notice {
+    margin: 0;
+    padding: 12px 14px;
+    border: 1px dashed var(--wax);
+    border-radius: 3px;
+    color: var(--ink);
+    background: color-mix(in srgb, var(--wax) 8%, var(--vellum));
+}
+a {
+    color: var(--dragon);
+}
+
+.amount {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.amount .num {
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+/* ---- The hoard: the one loud thing ---- */
+.hoard {
+    display: grid;
+    justify-items: center;
+    gap: 4px;
+    padding: 12px 0 4px;
+    text-align: center;
+}
+.hoard-label {
+    margin: 0;
+    color: var(--ink-faded);
+}
+.hoard-amount {
+    margin: 0;
+    font: 400 clamp(2.5rem, 13vw, 4.5rem)/1 var(--display);
+    color: var(--gilt);
+    overflow-wrap: anywhere;
+    text-shadow: 0 2px 0 color-mix(in srgb, var(--gilt) 25%, transparent);
+}
+.hoard-rate {
+    margin: 0;
+    display: flex;
+    gap: 16px;
+    color: var(--ink-faded);
+}
+.hoard-rate strong {
+    color: var(--ink);
+}
+.dig {
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 64px;
+    padding: 10px 28px;
+    font: 400 var(--step-1)/1 var(--display);
+    color: var(--dragon-ink);
+    background: var(--dragon);
+    border: 2px solid color-mix(in srgb, var(--dragon) 70%, black);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    box-shadow: 0 3px 0 color-mix(in srgb, var(--dragon) 60%, black);
+    transition:
+        transform 0.06s,
+        box-shadow 0.06s;
+}
+.dig:active {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 transparent;
+}
+
+/* ---- Buttons ---- */
+.price {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 6px 14px;
+    color: var(--ink);
+    border: 1px solid var(--dragon);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+}
+.price:hover:not(:disabled) {
+    background: color-mix(in srgb, var(--dragon) 10%, var(--parchment));
+}
+.price:active:not(:disabled) {
+    background: color-mix(in srgb, var(--dragon) 20%, var(--parchment));
+}
+.price:disabled {
+    border-color: var(--rule);
+    color: var(--ink-faded);
+    cursor: default;
+}
+.price-wide {
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+.price-max {
+    padding: 6px 10px;
+}
+
+/* Reset buttons: spending everything for something else */
+.reset {
+    display: grid;
+    gap: 2px;
+    justify-items: start;
+    text-align: left;
+    width: 100%;
+    min-height: 56px;
+    padding: 10px 14px;
+    background: var(--parchment);
+    color: var(--ink);
+    border: 1px solid var(--dragon);
+    border-left-width: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reset > span:first-child {
+    font-weight: 700;
+}
+.reset-wax {
+    border-color: var(--wax);
+}
+.reset:disabled {
+    border-color: var(--rule);
+    color: var(--ink-faded);
+    cursor: default;
+}
+
+/* ---- Ledger entries: an upgrade per line ---- */
+.ledger {
+    list-style: none;
+    display: grid;
+}
+.entry {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 4px 12px;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+}
+.entry:first-child {
+    border-top: 0;
+}
+.entry-text {
+    display: grid;
+    min-width: 0;
+}
+.entry-name {
+    overflow-wrap: anywhere;
+}
+.entry-effect {
+    color: var(--ink-faded);
+    font-size: var(--step--1);
+}
+.tally {
+    font: 400 var(--step-0)/1 var(--display);
+    color: var(--ink-faded);
+    text-align: right;
+}
+.tally-max {
+    opacity: 0.7;
+}
+.entry-actions {
+    display: flex;
+    gap: 6px;
+    justify-content: end;
+}
+.entry-owned .entry-name,
+.entry-maxed .entry-name {
+    color: var(--ink-faded);
+}
+.entry-short .price {
+    border-color: var(--rule);
+}
+.seal {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 2px 10px;
+    color: var(--wax);
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    font-size: var(--step--1);
+    transform: rotate(-3deg);
+}
+@media (max-width: 420px) {
+    .entry {
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+    .entry-actions {
+        grid-column: 1 / -1;
+        justify-content: start;
+    }
+    .tally {
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
+
+/* ---- Unlock cards and progress ---- */
+.unlock {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.unlock-text {
+    display: grid;
+    gap: 4px;
+    flex: 1 1 220px;
+    min-width: 0;
+}
+.unlock-ready .price {
+    background: var(--dragon);
+    color: var(--dragon-ink);
+}
+.progress {
+    height: 6px;
+    background: color-mix(in srgb, var(--rule) 60%, transparent);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+.progress i {
+    display: block;
+    height: 100%;
+    background: var(--gilt);
+    transition: width 0.3s;
+}
+
+/* ---- Dragon ---- */
+.dragon {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+}
+.dragon-text {
+    display: grid;
+    gap: 6px;
+}
+.dragon-text h2 {
+    font-size: var(--step-2);
+}
+@media (max-width: 420px) {
+    .dragon {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    .dragon-text {
+        justify-items: center;
+    }
+}
+
+/* ---- Toggles ---- */
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+}
+.toggle-track {
+    width: 40px;
+    height: 22px;
+    border-radius: 11px;
+    background: var(--rule);
+    position: relative;
+    flex: none;
+    transition: background 0.15s;
+}
+.toggle-knob {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--vellum);
+    transition: transform 0.15s;
+}
+.toggle.on .toggle-track {
+    background: var(--dragon);
+}
+.toggle.on .toggle-knob {
+    transform: translateX(18px);
+}
+
+/* ---- Forms ---- */
+.text-input {
+    width: 100%;
+    max-width: 320px;
+    min-height: 44px;
+    padding: 8px 10px;
+    font: inherit;
+    color: var(--ink);
+    background: var(--parchment);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+}
+.dragon-text .field {
+    margin-top: 6px;
+    font-weight: 400;
+    color: var(--ink-faded);
+    font-size: var(--step--1);
+}
+.field {
+    font-weight: 700;
+}
+textarea {
+    width: 100%;
+    font:
+        13px/1.4 ui-monospace,
+        Menlo,
+        monospace;
+    padding: 8px;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    background: var(--parchment);
+    color: var(--ink);
+    resize: vertical;
+}
+
+/* ---- Achievement notices ---- */
+.toasts {
+    position: fixed;
+    z-index: 7;
+    left: var(--gutter);
+    right: var(--gutter-r);
+    bottom: calc(var(--tabbar) + env(safe-area-inset-bottom, 0px) + 12px);
+    display: grid;
+    gap: 6px;
+    justify-items: center;
+    pointer-events: none;
+}
+.toast {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: var(--ink);
+    color: var(--vellum);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* ---- Wide screens: sidebar ---- */
+@media (min-width: 900px) {
+    .app {
+        display: grid;
+        grid-template-columns: 260px minmax(0, 1fr);
+        grid-template-rows: auto 1fr;
+        padding-bottom: 0;
+    }
+    .strip {
+        grid-column: 1;
+        grid-row: 1;
+        position: sticky;
+        top: 0;
+        align-self: start;
+        height: auto;
+        border-bottom: 0;
+        border-right: 1px solid var(--rule);
+        box-shadow: none;
+        padding: 24px 20px 12px;
+        background: transparent;
+        border-right: 1px solid var(--rule);
+    }
+    .strip-title {
+        display: block;
+        margin: 0 0 16px;
+        font: 400 var(--step-2)/1 var(--display);
+    }
+    .strip-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        overflow: visible;
+        gap: 8px;
+    }
+    .strip-list li {
+        order: 0 !important;
+        flex-wrap: wrap;
+    }
+    .strip-rate {
+        flex-basis: 100%;
+        padding-left: 22px;
+    }
+    .tabs {
+        grid-column: 1;
+        grid-row: 2;
+        position: sticky;
+        top: auto;
+        bottom: auto;
+        align-self: start;
+        flex-direction: column;
+        justify-content: start;
+        gap: 2px;
+        background: transparent;
+        border: 0;
+        border-right: 1px solid var(--rule);
+        padding: 8px 12px 24px;
+    }
+    .tab {
+        flex-direction: row;
+        justify-content: start;
+        gap: 10px;
+        min-height: 44px;
+        padding: 0 10px;
+        font-size: var(--step-0);
+    }
+    .screen {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        padding-top: 32px;
+    }
+    .toasts {
+        left: auto;
+        right: 24px;
+        bottom: 24px;
+        justify-items: end;
+    }
+}
